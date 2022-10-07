@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Text} from "../Database/text";
+import {NavBarTexts} from "../Database/texts";
 
 @Component({
   selector: 'app-dashboard',
@@ -11,5 +13,5 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+dashboardtexts : Text[] = NavBarTexts;
 }

@@ -1,30 +1,30 @@
 <div class="navbar">
-  <div class="navbar-container">
+  <div class="navbar-container" *ngFor="let navbartext of navbartexts">
     <div class="navbar-container-base">
       <div class="navbar-container-base-title">
         <img [src]=""/>
-        <p>{{AppName}}</p>
+        <p>{{navbartext.navbarLogo}}</p>
       </div>
       <div class="navbar-container-base-items">
         <div class="navbar-container-base-items-item">
           <img [src]=""/>
-          <p>{{Dashboard}}</p>
+          <p>{{navbartext.navbarDashboard}}</p>
         </div>
         <div class="navbar-container-base-items-item">
           <img [src]=""/>
-          <p>{{Dashboard}}</p>
+          <p>{{navbartext.navbarClients}}</p>
         </div>
         <div class="navbar-container-base-items-item">
           <img [src]=""/>
-          <p>{{Dashboard}}</p>
+          <p>{{navbartext.navbarProducts}}</p>
         </div>
         <div class="navbar-container-base-items-item">
           <img [src]=""/>
-          <p>{{Dashboard}}</p>
+          <p>{{navbartext.navbarAnalitycs}}</p>
         </div>
         <div class="navbar-container-base-items-item">
           <img [src]=""/>
-          <p>{{Dashboard}}</p>
+          <p>{{navbartext.navbarSettings}}</p>
         </div>
       </div>
     </div>

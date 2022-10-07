@@ -7,6 +7,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { LedbarComponent } from './ledbar/ledbar.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { BurgerbarComponent } from './burgerbar/burgerbar.component';
+import { AnalitycsComponent } from './analitycs/analitycs.component';
+import { UpdatesComponent } from './updates/updates.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { BurgerbarComponent } from './burgerbar/burgerbar.component';
     DashboardComponent,
     LedbarComponent,
     NavbarComponent,
-    BurgerbarComponent
+    BurgerbarComponent,
+    AnalitycsComponent,
+    UpdatesComponent
   ],
   imports: [
     BrowserModule,
