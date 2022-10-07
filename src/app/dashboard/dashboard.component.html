@@ -1,0 +1,89 @@
+<div class="dashboard">
+  <div class="dashboard-cotainer">
+    <div class="dashboard-container-base">
+      <div class="dashboard-container-base-title">
+        <h1>{{Title}}</h1>
+      </div>
+      <div class="dashboard-container-base-salesinfo">
+        <div class="dashboard-container-base-salesinfo-block">
+          <img [src]=""/>
+          <p>{{TotalSales}}</p>
+          <p>{{SalesCosts}}</p>
+          <div></div>
+        </div>
+        <div class="dashboard-container-base-salesinfo-block">
+          <img [src]=""/>
+          <p>{{TotalExpanses}}</p>
+          <p>{{ExpansesCosts}}</p>
+          <div></div>
+        </div>
+        <div class="dashboard-container-base-salesinfo-block">
+          <img [src]=""/>
+          <p>{{TotalIncome}}</p>
+          <p>{{IncomeCosts}}</p>
+          <div></div>
+        </div>
+      </div>
+      <div class="dashboard-container-base-recent">
+        <div class="dashboard-container-base-recent-block">
+          <table>
+            <tbody>
+            <tr>
+              <th class=""></th>
+              <th class=""></th>
+              <th class=""></th>
+              <th class=""></th>
+            </tr>
+            <tr>
+              <td>{{product.name}}</td>
+              <td>{{product.number}}</td>
+              <td>{{product.payment}}</td>
+              <td>{{product.status}}</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="dashboard-container-base-updates">
+        <div class="dashboard-container-base-updates-title">
+          <p>{{LastUpdates}}</p>
+        </div>
+        <div class="dashboard-container-base-updates-block">
+          <div class="dashboard-container-base-updates-block-element">
+            <div class="dashboard-container-base-updates-block-element-image">
+              <img [src]=""/>
+            </div>
+            <div class="dashboard-container-base-updates-block-element-text">
+              <p>{{updates.name}}</p><p>{{updates.message}}</p>
+              <p>{{updates.time}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="dashboard-container-base-analitycs">
+          <div class="dashboard-container-base-analitycs-title">
+            <p>{{SalesAnalitycs}}</p>
+          </div>
+          <div class="dashboard-container-base-analitycs-block">
+            <div class="dashboard-container-base-analitycs-block-image">
+              <img [src]=""/>
+            </div>
+            <div class="dashboard-container-base-analitycs-block-text">
+              <p>{{analitycs.text}}</p>
+              <p>{{analitycs.time}}</p>
+            </div>
+            <div class="dashboard-container-base-analitycs-block-percent">
+              <p>{{analitycs.percent}}</p>
+            </div>
+            <div class="dashboard-container-base-analitycs-block-number">
+              <p>{{analitycs.number}}</p>
+            </div>
+          </div>
+          <div class="dashboard-container-base-analitycs-add">
+            <img [src]=""/>
+            <p>{{AddProduct}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
