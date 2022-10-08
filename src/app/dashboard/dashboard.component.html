@@ -1,67 +1,122 @@
 <app-ledbar></app-ledbar>
 <div class="dashboard">
   <div class="dashboard_container" *ngFor="let dashboardtext of dashboardtexts">
+    <app-navbar></app-navbar>
     <div class="dashboard_container_base">
       <div class="dashboard_container_base_title">
-        <h1 class="dashboard_container_base_title_text">{{dashboardtext.dashboardTitle}}</h1>
+        <h1 class="dashboard_container_base_title_text">
+          {{ dashboardtext.dashboardTitle }}
+        </h1>
       </div>
       <div class="dashboard_container_base_salesinfo">
         <div class="dashboard_container_base_salesinfo_block">
-          <img class="dashboard_container_base_salesinfo_block_icon" [src]=""/>
-          <p class="dashboard_container_base_salesinfo_block_text">{{dashboardtext.dashboardTotalSales}}</p>
-          <p class="dashboard_container_base_salesinfo_block_text">{{dashboardtext.dashboardSalesCosts}}</p>
-          <div class="dashboard_container_base_salesinfo_block_chart">
-          </div>
-        </div>
-        <div class="dashboard_container_base_salesinfo_block">
-          <img class="dashboard_container-base_salesinfo_block_icon" [src]=""/>
-          <p class="dashboard_container_base_salesinfo_block_text">{{dashboardtext.dashboardTotalExpanses}}</p>
-          <p class="dashboard_container_base_salesinfo_block_text">{{dashboardtext.dashboardExpansesCosts}}</p>
+          <img class="dashboard_container_base_salesinfo_block_icon" [src]="" />
+          <p class="dashboard_container_base_salesinfo_block_text">
+            {{ dashboardtext.dashboardTotalSales }}
+          </p>
+          <p class="dashboard_container_base_salesinfo_block_text">
+            {{ dashboardtext.dashboardSalesCosts }}
+          </p>
           <div class="dashboard_container_base_salesinfo_block_chart"></div>
         </div>
         <div class="dashboard_container_base_salesinfo_block">
-          <img class="dashboard_container_base_salesinfo_block_icon" [src]=""/>
-          <p class="dashboard_container_base_salesinfo_block_text">{{dashboardtext.dashboardTotalIncome}}</p>
-          <p class="dashboard_container_base_salesinfo_block_text">{{dashboardtext.dashboardIncomeCosts}}</p>
+          <img class="dashboard_container-base_salesinfo_block_icon" [src]="" />
+          <p class="dashboard_container_base_salesinfo_block_text">
+            {{ dashboardtext.dashboardTotalExpanses }}
+          </p>
+          <p class="dashboard_container_base_salesinfo_block_text">
+            {{ dashboardtext.dashboardExpansesCosts }}
+          </p>
+          <div class="dashboard_container_base_salesinfo_block_chart"></div>
+        </div>
+        <div class="dashboard_container_base_salesinfo_block">
+          <img class="dashboard_container_base_salesinfo_block_icon" [src]="" />
+          <p class="dashboard_container_base_salesinfo_block_text">
+            {{ dashboardtext.dashboardTotalIncome }}
+          </p>
+          <p class="dashboard_container_base_salesinfo_block_text">
+            {{ dashboardtext.dashboardIncomeCosts }}
+          </p>
           <div class="dashboard_container_base_salesinfo_block_chart"></div>
         </div>
       </div>
       <div class="dashboard_container_base_recent">
+        <div class="dashboard_container_base_recent_title">
+          <p class="dashboard_container_base_recent_title_text">
+            Recent Products
+          </p>
+        </div>
         <div class="dashboard_container_base_recent_block">
           <table class="dashboard_container_base_recent_block_table">
             <tbody class="dashboard_container_base_recent_block_table_body">
-            <tr class="dashboard_container_base_recent_block_table_body_nav">
-              <th class="dashboard_container_base_recent_block_table_body_nav_item">Product Name</th>
-              <th class="dashboard_container_base_recent_block_table_body_nav_item">Product Number</th>
-              <th class="dashboard_container_base_recent_block_table_body_nav_item">Payment</th>
-              <th class="dashboard_container_base_recent_block_table_body_nav_item">Status</th>
-            </tr>
-            <tr class="dashboard_container_base_recent_block_table_body_row">
-              <td class="dashboard_container_base_recent_block_table_body_row_item">Macbook Pro</td>
-              <td class="dashboard_container_base_recent_block_table_body_row_item">2341</td>
-              <td class="dashboard_container_base_recent_block_table_body_row_item">Paid</td>
-              <td class="dashboard_container_base_recent_block_table_body_row_item">Delivered</td>
-            </tr>
+              <tr class="dashboard_container_base_recent_block_table_body_nav">
+                <th
+                  class="dashboard_container_base_recent_block_table_body_nav_item"
+                >
+                  Product Name
+                </th>
+                <th
+                  class="dashboard_container_base_recent_block_table_body_nav_item"
+                >
+                  Product Number
+                </th>
+                <th
+                  class="dashboard_container_base_recent_block_table_body_nav_item"
+                >
+                  Payment
+                </th>
+                <th
+                  class="dashboard_container_base_recent_block_table_body_nav_item"
+                >
+                  Status
+                </th>
+              </tr>
+              <tr class="dashboard_container_base_recent_block_table_body_row">
+                <td
+                  class="dashboard_container_base_recent_block_table_body_row_item"
+                >
+                  Macbook Pro
+                </td>
+                <td
+                  class="dashboard_container_base_recent_block_table_body_row_item"
+                >
+                  2341
+                </td>
+                <td
+                  class="dashboard_container_base_recent_block_table_body_row_item"
+                >
+                  Paid
+                </td>
+                <td
+                  class="dashboard_container_base_recent_block_table_body_row_item"
+                >
+                  Delivered
+                </td>
+              </tr>
             </tbody>
           </table>
         </div>
       </div>
-      <div class="dashboard_container_base_updates">
-        <div class="dashboard_container_base_updates_title">
-          <p class="dashboard_container_base_updates_title_text">{{dashboardtext.dashboardLastUpdates}}</p>
-        </div>
-        <div class="dashboard_container_base_updates_block">
+    </div>
+    <div class="dashboard_container_base_updates">
+      <div class="dashboard_container_base_updates_title">
+        <p class="dashboard_container_base_updates_title_text">
+          {{ dashboardtext.dashboardLastUpdates }}
+        </p>
+      </div>
+      <div class="dashboard_container_base_updates_block">
         <app-updates></app-updates>
+      </div>
+      <div class="dashboard_container_base_analitycs">
+        <div class="dashboard_container_base_analitycs_title">
+          <p class="dashboard_container_base_analitycs_title_text">
+            {{ dashboardtext.dashboardSalesAnalitycs }}
+          </p>
         </div>
-        <div class="dashboard_container_base_analitycs">
-          <div class="dashboard_container_base_analitycs_title">
-            <p class="dashboard_container_base_analitycs_title_text">{{dashboardtext.dashboardSalesAnalitycs}}</p>
-          </div>
-            <app-analitycs></app-analitycs>
-          <div class="dashboard_container_base_analitycs_add">
-            <img class="dashboard_container_base_analitycs_add_icon"[src]=""/>
-            <p class="dashboard_container_base_analitycs_add_text">AddProduct</p>
-          </div>
+        <app-analitycs></app-analitycs>
+        <div class="dashboard_container_base_analitycs_add">
+          <img class="dashboard_container_base_analitycs_add_icon" [src]="" />
+          <p class="dashboard_container_base_analitycs_add_text">AddProduct</p>
         </div>
       </div>
     </div>

@@ -1,57 +1,153 @@
-.dashboard{
+.dashboard {
   width: 100%;
-  height: 100% ;
-
-  &_container{
-    padding: 1px;
+  height: 100%;
+  &_container {
     color: white;
-    background: #19191F;
+    background: #19191f;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     flex-direction: row;
-    &_base{
-
-      &_title{
-
+    &_base {
+      padding: 3%;
+      &_title {
+        text-align: left;
+        &_text {
+          height: 80px;
+        }
       }
-      &_salesinfo{
+      &_salesinfo {
         display: flex;
         justify-content: center;
-        &_block{
+        height: auto;
+
+        &_block {
           background: #212429;
           border-radius: 27px;
-          min-width: 340px;
+          min-width: 300px;
           width: 100%;
-          max-width: 340px;
+          max-width: 300px;
           height: 261px;
           flex-direction: column;
           display: flex;
           justify-content: center;
           align-items: center;
           margin-right: 20px;
+          &_icon {
+          }
+          &_text {
+          }
+          &_chart {
+          }
         }
-
       }
-      &_recent{
+      &_recent {
         display: flex;
         justify-content: center;
         align-items: center;
-
-        &_block{
+        flex-direction: column;
+        padding: 3%;
+        &_title {
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          width: 100%;
+          &_text {
+            font-size: 20px;
+          }
+        }
+        &_block {
           background: #212429;
           border-radius: 27px;
-          min-width: 907px;
+          min-width: 957px;
           margin-top: 20px;
-          max-width: 907px;
+          max-width: 957px;
           display: flex;
           justify-content: center;
           align-items: center;
           width: 100%;
-          height: 487px;
-
+          height: 387px;
+          &_table {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &_body {
+              display: flex;
+              justify-content: flex-start;
+              flex-direction: column;
+              align-items: center;
+              &_nav {
+                &_item {
+                  padding: 50px;
+                }
+              }
+              &_row {
+                &_item {
+                  padding: 67px;
+                }
+              }
+            }
+          }
         }
-
+      }
+      &_updates {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        &_title {
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          width: 100%;
+          &_text {
+            font-size: 25px;
+          }
+        }
+        &_block {
+          background: #212429;
+          border-radius: 27px;
+          max-width: 391px;
+          min-width: 391px;
+          height: 306px;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      &_analitycs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        &_title {
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          width: 100%;
+          &_text {
+            font-size: 25px;
+          }
+        }
+        &_add {
+          border-radius: 27px;
+          margin-bottom: 20px;
+          max-width: 391px;
+          min-width: 391px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: 3px dashed #3a3a3a;
+          height: 85px;
+          &_icon {
+          }
+          &_text {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 24px;
+            color: #e64355;
+          }
+        }
       }
     }
   }

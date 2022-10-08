@@ -1,30 +1,42 @@
 <div class="navbar">
-  <div class="navbar-container" *ngFor="let navbartext of navbartexts">
-    <div class="navbar-container-base">
-      <div class="navbar-container-base-title">
-        <img [src]=""/>
-        <p>{{navbartext.navbarLogo}}</p>
+  <div class="navbar_container" *ngFor="let navbartext of navbartexts">
+    <div class="navbar_container_base">
+      <div class="navbar_container_base_title">
+        <img class="navbar_container_base_title_icon" [src]="" />
+        <p class="navbar_container_base_title_text">
+          {{ navbartext.navbarLogo }}
+        </p>
       </div>
-      <div class="navbar-container-base-items">
-        <div class="navbar-container-base-items-item">
-          <img [src]=""/>
-          <p>{{navbartext.navbarDashboard}}</p>
+      <div class="navbar_container_base_items">
+        <div class="navbar_container_base_items_item">
+          <img class="navbar_container_base_items_item_icon" [src]="" />
+          <p class="navbar_container_base_items_item_text">
+            {{ navbartext.navbarDashboard }}
+          </p>
         </div>
-        <div class="navbar-container-base-items-item">
-          <img [src]=""/>
-          <p>{{navbartext.navbarClients}}</p>
+        <div class="navbar_container_base_items_item">
+          <img class="navbar_container_base_items_item_icon" [src]="" />
+          <p class="navbar_container_base_items_item_text">
+            {{ navbartext.navbarClients }}
+          </p>
         </div>
-        <div class="navbar-container-base-items-item">
-          <img [src]=""/>
-          <p>{{navbartext.navbarProducts}}</p>
+        <div class="navbar_container_base_items_item">
+          <img class="navbar_container_base_items_item_icon" [src]="" />
+          <p class="navbar_container_base_items_item_text">
+            {{ navbartext.navbarProducts }}
+          </p>
         </div>
-        <div class="navbar-container-base-items-item">
-          <img [src]=""/>
-          <p>{{navbartext.navbarAnalitycs}}</p>
+        <div class="navbar_container_base_items_item">
+          <img class="navbar_container_base_items_item_icon" [src]="" />
+          <p class="navbar_container_base_items_item_text">
+            {{ navbartext.navbarAnalitycs }}
+          </p>
         </div>
-        <div class="navbar-container-base-items-item">
-          <img [src]=""/>
-          <p>{{navbartext.navbarSettings}}</p>
+        <div class="navbar_container_base_items_item">
+          <img class="navbar_container_base_items_item_icon" [src]="" />
+          <p class="navbar_container_base_items_item_text">
+            {{ navbartext.navbarSettings }}
+          </p>
         </div>
       </div>
     </div>
