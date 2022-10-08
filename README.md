@@ -1,4 +1,6 @@
 # Brightmoon
+![Cover (1) 1](https://user-images.githubusercontent.com/89411648/194666019-95ed081a-8106-4d25-ae3a-58605105b3bf.png)
+
 ![Slide 16_9 - 1](https://user-images.githubusercontent.com/89411648/194578228-b8a4a088-9e9f-4928-b555-626ca8695d0f.png)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.3.
