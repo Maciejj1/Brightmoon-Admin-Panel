@@ -1,0 +1,44 @@
+
+<div class="mobilenav">
+  <app-ledbar></app-ledbar>
+  <div class="mobilenav_container">
+    <div class="mobilenav_container_burger">
+      <img (click)="open()" [src]="burger" />
+    </div>
+    <div class="mobilenav_container_items">
+      <button class="mobilenav_container_items_switch">Switch</button>
+      <img [src]="user" />
+    </div>
+  </div>
+  <div [hidden]="burgerShow" class="mobilenav_side">
+    <div class="mobilenav_side_container">
+      <div class="mobilenav_side_container_title">
+        <img [src]="logo" />
+        <h1>BRIGHTMOON</h1>
+        <img (click)="close()" [src]="closeicon"  class="mobilenav_side_container_title_close"/>
+      </div>
+      <div class="mobilenav_side_container_items">
+        <div class="mobilenav_side_container_items_link">
+          <img [src]="" />
+          <p>Dashboard</p>
+        </div>
+        <div class="mobilenav_side_container_items_link">
+          <img [src]="" />
+          <p>Dashboard</p>
+        </div>
+        <div class="mobilenav_side_container_items_link">
+          <img [src]="" />
+          <p>Dashboard</p>
+        </div>
+        <div class="mobilenav_side_container_items_link">
+          <img [src]="" />
+          <p>Dashboard</p>
+        </div>
+        <div class="mobilenav_side_container_items_link">
+          <img [src]="" />
+          <p>Dashboard</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

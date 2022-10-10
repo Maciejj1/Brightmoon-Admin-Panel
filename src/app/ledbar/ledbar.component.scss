@@ -6,7 +6,12 @@
   margin: 0;
   padding: 0;
 }
+@media screen and (max-width: 1023px) {
+  .gradient-top-line{
 
+    height: 12px;
+  }
+}
 @keyframes gradient {
   0% {
     background-position: 0% 50%;

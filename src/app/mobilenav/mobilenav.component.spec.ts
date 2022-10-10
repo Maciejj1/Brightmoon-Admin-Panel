@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BurgerbarComponent } from './burgerbar.component';
+import { MobilenavComponent } from './mobilenav.component';
 
-describe('BurgerbarComponent', () => {
-  let component: BurgerbarComponent;
-  let fixture: ComponentFixture<BurgerbarComponent>;
+describe('MobilenavComponent', () => {
+  let component: MobilenavComponent;
+  let fixture: ComponentFixture<MobilenavComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BurgerbarComponent ]
+      declarations: [ MobilenavComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(BurgerbarComponent);
+    fixture = TestBed.createComponent(MobilenavComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

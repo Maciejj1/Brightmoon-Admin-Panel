@@ -7,4 +7,21 @@ body {
   padding: 0;
   font-family: "Inter", sans-serif;
   font-weight: 700;
+  width: auto;
+  height: auto;
+}
+html {
+  min-height: 100%;
+  outline: none;
+}
+//Desktop LedBar off to mobile devices
+@media screen and (max-width: 1023px){
+  .desktop-ledbar{
+display: none;
+  }
+}
+@media screen and (min-width: 1024px){
+  .desktop-ledbar{
+    z-index: 2;
+  }
 }

@@ -6,9 +6,11 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LedbarComponent } from './ledbar/ledbar.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { BurgerbarComponent } from './burgerbar/burgerbar.component';
 import { AnalitycsComponent } from './analitycs/analitycs.component';
 import { UpdatesComponent } from './updates/updates.component';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MobilenavComponent } from './mobilenav/mobilenav.component';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -16,15 +18,12 @@ import { UpdatesComponent } from './updates/updates.component';
     DashboardComponent,
     LedbarComponent,
     NavbarComponent,
-    BurgerbarComponent,
     AnalitycsComponent,
-    UpdatesComponent
+    UpdatesComponent,
+    MobilenavComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, MatSidenavModule, MatButtonModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

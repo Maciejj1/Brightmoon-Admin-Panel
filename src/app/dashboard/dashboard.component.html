@@ -1,7 +1,10 @@
-<app-ledbar></app-ledbar>
+<app-ledbar class="desktop-ledbar"></app-ledbar>
+
 <div class="dashboard">
+
   <div class="dashboard_container" *ngFor="let dashboardtext of dashboardtexts">
-    <app-navbar></app-navbar>
+    <app-navbar class="desktop_nav"></app-navbar>
+    <app-mobilenav></app-mobilenav>
     <div class="dashboard_container_base">
       <div class="dashboard_container_base_title">
         <h1 class="dashboard_container_base_title_text">
@@ -17,7 +20,9 @@
           <p class="dashboard_container_base_salesinfo_block_text">
             {{ dashboardtext.dashboardSalesCosts }}
           </p>
-          <div class="dashboard_container_base_salesinfo_block_chart"></div>
+          <div class="dashboard_container_base_salesinfo_block_chart">
+            <p>90%</p>
+          </div>
         </div>
         <div class="dashboard_container_base_salesinfo_block">
           <img class="dashboard_container-base_salesinfo_block_icon" [src]="" />
@@ -98,6 +103,7 @@
         </div>
       </div>
     </div>
+    <div></div>
     <div class="dashboard_container_base_updates">
       <div class="dashboard_container_base_updates_title">
         <p class="dashboard_container_base_updates_title_text">
