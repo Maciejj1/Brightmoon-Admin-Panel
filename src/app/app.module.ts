@@ -11,6 +11,24 @@ import { UpdatesComponent } from './updates/updates.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MobilenavComponent } from './mobilenav/mobilenav.component';
 import { MatButtonModule } from '@angular/material/button';
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import {
+  provideAnalytics,
+  getAnalytics,
+  ScreenTrackingService,
+  UserTrackingService,
+} from '@angular/fire/analytics';
+import { provideAuth, getAuth } from '@angular/fire/auth';
+import { provideFirestore, getFirestore } from '@angular/fire/firestore';
+import { AngularFireModule } from '@angular/fire/compat';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { FormsModule } from '@angular/forms';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { VerifyEmailComponent } from './verify-email/verify-email.component';
+import { AddproductComponent } from './addproduct/addproduct.component';
 
 @NgModule({
   declarations: [
@@ -21,9 +39,26 @@ import { MatButtonModule } from '@angular/material/button';
     AnalitycsComponent,
     UpdatesComponent,
     MobilenavComponent,
+    LoginComponent,
+    RegisterComponent,
+    PagenotfoundComponent,
+    ForgotPasswordComponent,
+    VerifyEmailComponent,
+    AddproductComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, MatSidenavModule, MatButtonModule],
-  providers: [],
+  imports: [
+    BrowserModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AppRoutingModule,
+    MatSidenavModule,
+    MatButtonModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAnalytics(() => getAnalytics()),
+    provideAuth(() => getAuth()),
+    provideFirestore(() => getFirestore()),
+    FormsModule,
+  ],
+  providers: [ScreenTrackingService, UserTrackingService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

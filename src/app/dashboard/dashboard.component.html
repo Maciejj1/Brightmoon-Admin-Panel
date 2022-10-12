@@ -2,10 +2,13 @@
 
 <div class="dashboard">
 
+
+
   <div class="dashboard_container" *ngFor="let dashboardtext of dashboardtexts">
     <app-navbar class="desktop_nav"></app-navbar>
     <app-mobilenav></app-mobilenav>
     <div class="dashboard_container_base">
+      <app-addproduct *ngIf="modal.showDialog" ></app-addproduct>
       <div class="dashboard_container_base_title">
         <h1 class="dashboard_container_base_title_text">
           {{ dashboardtext.dashboardTitle }}
@@ -75,27 +78,38 @@
                 >
                   Status
                 </th>
+                <th
+                  class="dashboard_container_base_recent_block_table_body_nav_item"
+                >
+                  Action
+                </th>
               </tr>
-              <tr class="dashboard_container_base_recent_block_table_body_row">
+              <tr class="dashboard_container_base_recent_block_table_body_row" *ngFor="let product of productsList ">
                 <td
                   class="dashboard_container_base_recent_block_table_body_row_item"
+
                 >
-                  Macbook Pro
+                  {{product.ProductName}}
                 </td>
                 <td
                   class="dashboard_container_base_recent_block_table_body_row_item"
                 >
-                  2341
+                  {{product.ProductNumber}}
                 </td>
                 <td
                   class="dashboard_container_base_recent_block_table_body_row_item"
                 >
-                  Paid
+                  {{product.ProductPayment}}
                 </td>
+                <td
+                class="dashboard_container_base_recent_block_table_body_row_item"
+              >
+                  {{product.ProductStatus}}
+              </td>
                 <td
                   class="dashboard_container_base_recent_block_table_body_row_item"
                 >
-                  Delivered
+                  <button class="btn btn-outline-danger" (click)="deleteProduct(product)">Delete</button>
                 </td>
               </tr>
             </tbody>
@@ -120,9 +134,10 @@
           </p>
         </div>
         <app-analitycs></app-analitycs>
-        <div class="dashboard_container_base_analitycs_add">
+        <div class="dashboard_container_base_analitycs_add" >
           <img class="dashboard_container_base_analitycs_add_icon" [src]="" />
-          <p class="dashboard_container_base_analitycs_add_text">AddProduct</p>
+          <p class="dashboard_container_base_analitycs_add_text" > AddProduct</p>
+          <button (click)="modal.showDialog = true">Click</button>
         </div>
       </div>
     </div>

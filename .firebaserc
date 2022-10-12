@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "brightmoon-946fa": {
+      "hosting": {
+        "Brightmoon": [
+          "brightmoon-946fa"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "brightmoon-946fa"
+  }
+}

@@ -1,0 +1,40 @@
+<div class="login d-flex justify-content-center align-items-center vh-100">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card border-0 shadow rounded-3 my-5">
+          <div class="card-body p-4 p-sm-5">
+            <h5 class="card-title text-center mb-5 fw-light fs-5">Sign Up</h5>
+            <form>
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" name="email" placeholder="name@example.com" [(ngModel)]="email">
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="password" class="form-control" name="password" placeholder="Password" [(ngModel)]="password">
+                <label for="floatingPassword">Password</label>
+              </div>
+
+              <div class="form-check mb-3">
+
+              </div>
+              <div class="d-grid">
+                <button type="button" class="btn btn-primary btn-login text-uppercase fw-bold" type="submit" (click)="register()">Sign
+                  Up</button>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <a href="" style="text-decoration: none">Have an Account?<span class="text-danger">Login</span> </a>
+                </div>
+              </div>
+
+
+
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
