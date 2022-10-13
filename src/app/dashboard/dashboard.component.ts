@@ -12,6 +12,13 @@ import { ModalService } from '../shared/modal.service';
   styleUrls: ['./dashboard.component.scss'],
 })
 export class DashboardComponent implements OnInit {
+  sales = 'assets/images/sales-icon.png';
+  expanses = 'assets/images/expanses-icon.png';
+  income = 'assets/images/income-icon.png';
+  plus = 'assets/images/plus-icon.png';
+  user = 'assets/images/user-avatar.png';
+  customer = 'assets/images/customer-picture.png';
+
   display = false;
   displayModal() {
     this.display = true;

@@ -1,43 +1,40 @@
-<div class="login d-flex justify-content-center align-items-center vh-100">
-<div class="container">
-  <div class="row">
-    <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
-      <div class="card border-0 shadow rounded-3 my-5">
-        <div class="card-body p-4 p-sm-5">
-          <h5 class="card-title text-center mb-5 fw-light fs-5">Sign In</h5>
-          <form>
-            <div class="form-floating mb-3">
-              <input type="email" class="form-control" name="email" placeholder="name@example.com" [(ngModel)]="email">
-              <label for="floatingInput">Email address</label>
-            </div>
-            <div class="form-floating mb-3">
-              <input type="password" class="form-control" name="password" placeholder="Password" [(ngModel)]="password">
-              <label for="floatingPassword">Password</label>
-            </div>
+<div class="login">
+  <div class="login_container">
+    <div class="login_container_big_circle"></div>
+    <div class="login_container_small_circle"></div>
+    <div class="login_container_logotype">
+      <div class="login_container_logotype_logo">
+        <img [src]="logo" class="login_container_logotype_logo_logo" />
+      </div>
+<div class="login_container_logotype_title_title">
+  <h5 class="login_container_logotype_title">BRIGHTMOON</h5>
+</div>
 
-            <div class="form-check mb-3">
-
-            </div>
-            <div class="d-grid">
-              <button type="button" class="btn btn-primary btn-login text-uppercase fw-bold" type="submit" (click)="login()">Sign
-                in</button>
-            </div>
-            <div class="row">
-              <div class="col-6">
-                <a href="/register" style="text-decoration: none">Need Account?<span class="text-danger">Register</span> </a>
-              </div>
-              <div class="col-6">
-                <a href="/forgot-password" style="text-decoration: none">Forgot Password?</a>
-              </div>
-            </div>
-
-
-
-
-          </form>
+    </div>
+    <div class="login_container_base">
+      <div class="login_container_base_form">
+        <div class="login_container_base_form_title">
+          <p class="login_container_base_form_title_text">LOGIN</p>
+        </div>
+        <div class="login_container_base_form_inputs" >
+          <input type="email" class="login_container_base_form_inputs_input" placeholder="Email" [(ngModel)]="email" />
+          <input
+            type="password"
+            class="login_container_base_form_inputs_input"
+            placeholder="Password"
+            [(ngModel)]="password"
+          />
+        </div>
+        <div class="login_container_base_form_button">
+          <button class="login_container_base_form_button_button" (click)="login()">Login</button>
+        </div>
+        <div class="col-6  m-3 d-flex justify-content-center align-items-center">
+          <a href="/register" style="text-decoration: none; color: rgba(206, 81, 116, 0.59);">Need Account?<span class="text-danger">Register</span> </a>
+        </div>
+        <div class="col-6 d-flex justify-content-center align-items-center">
+          <a href="/forgot-password" style="text-decoration: none; color: rgba(206, 81, 116, 0.59);">Forgot Password?</a>
         </div>
       </div>
     </div>
   </div>
-</div>
 </div>

@@ -9,6 +9,7 @@ import { AuthService } from '../shared/auth.service';
 export class LoginComponent implements OnInit {
   email: string = '';
   password: string = '';
+  logo = 'assets/images/logo.png';
   constructor(private auth: AuthService) {}
 
   ngOnInit(): void {}

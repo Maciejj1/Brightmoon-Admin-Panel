@@ -1,6 +1,6 @@
 @media screen and (min-width: 1601px) {
   .dashboard {
-  height: auto;
+    height: auto;
     &_container {
       height: 100%;
       width: 100%;
@@ -12,10 +12,9 @@
       flex: auto;
       flex-grow: 1;
       &_base {
-        display:flex ;
+        display: flex;
         flex-direction: column;
         &_title {
-
           padding-bottom: 10px;
           align-items: center;
           justify-content: flex-start;
@@ -29,8 +28,7 @@
           }
         }
         &_salesinfo {
-
-
+          margin-left: 20px;
           display: flex;
           justify-content: space-between;
           align-items: center;
@@ -47,6 +45,7 @@
             justify-content: center;
             flex-direction: column;
             &_icon {
+              margin-bottom: 20px;
             }
             &_text {
               font-style: normal;
@@ -60,57 +59,83 @@
               font-weight: 300;
               font-size: 15px;
               line-height: 18px;
+              border-radius: 100%;
+              width: 70px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 70px;
+              background: linear-gradient(
+                146.38deg,
+                #fe3535 -17.66%,
+                #6690fe 80.03%
+              );
 
               color: #ffffff;
+              p {
+                margin: 0;
+              }
             }
           }
         }
         &_recent {
-
-         margin-top: 50px;
+          margin-top: 50px;
+          margin-left: 20px;
           &_title {
             &_text {
               font-style: normal;
               font-weight: 700;
               font-size: 24px;
               line-height: 29px;
-
+              height: 10px;
               color: #ffffff;
             }
           }
           &_block {
             background: #212429;
             border-radius: 27px;
-            min-width: 987px;
+            min-width: 887px;
             margin-top: 60px;
-            max-width: 987px;
+            max-width: 887px;
             width: 100%;
-            height: 447px;
+            height: 347px;
             padding: 0px;
             &_table {
               display: flex;
               justify-content: center;
               align-items: center;
               &_body {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                flex-direction: column;
                 &_nav {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  text-align: center;
                   &_item {
                     font-style: normal;
                     font-weight: 700;
                     font-size: 20px;
                     line-height: 24px;
-
-                    color: #FFFFFF;
-
+                    margin-left: 25px;
+                    margin-right: 25px;
+                    color: #ffffff;
                   }
                 }
                 &_row {
+                  display: flex;
+                  justify-content: center;
+                  text-align: center;
+                  align-items: center;
                   &_item {
                     font-style: normal;
                     font-weight: 300;
                     font-size: 20px;
-                    line-height: 24px;
-
-                    color: #FFFFFF;
+                    margin-left: 40px;
+                    margin-right: 40px;
+                    color: #ffffff;
                   }
                 }
               }
@@ -118,16 +143,20 @@
           }
         }
         &_updates {
-          padding: 1%;
+          display: flex;
+          justify-content: flex-start;
+          flex-direction: column;
+          align-items: flex-start;
+          margin-right: 20px;
           &_title {
+            margin-top: 10px;
             &_text {
               font-style: normal;
               font-weight: 700;
               font-size: 24px;
               line-height: 29px;
 
-              color: #FFFFFF;
-
+              color: #ffffff;
             }
           }
           &_block {
@@ -137,6 +166,9 @@
             min-width: 391px;
             height: 306px;
             width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
           }
         }
         &_analitycs {
@@ -147,8 +179,7 @@
               font-size: 24px;
               line-height: 29px;
 
-              color: #FFFFFF;
-
+              color: #ffffff;
             }
           }
           &_add {
@@ -161,7 +192,12 @@
             min-width: 381px;
             border: 3px dashed #3a3a3a;
             height: 85px;
+            cursor: pointer;
+            p{
+              margin: 0;
+            }
             &_icon {
+              margin-right: 10px;
             }
             &_text {
               font-style: normal;
@@ -169,14 +205,18 @@
               font-size: 20px;
               line-height: 24px;
               color: #e64355;
+              margin-left: 20px;
             }
+          }
+          &_add:hover{
+            background: #3a3a3a;
           }
         }
       }
     }
   }
 }
-@media screen and (min-width: 1024px)and (max-width: 1600px){
+@media screen and (min-width: 1024px) and (max-width: 1600px) {
   .dashboard {
     display: flex;
     justify-content: center;
@@ -190,11 +230,12 @@
       justify-content: center;
       background-color: #19191f;
       &_base {
-
-        display:flex ;
+        display: flex;
         flex-direction: column;
         &_title {
-margin-top: 50px;
+          height: 100%;
+          max-height: 500px;
+          min-height: 220px;
           align-items: center;
           justify-content: center;
           display: flex;
@@ -212,9 +253,10 @@ margin-top: 50px;
           align-items: center;
           &_block {
             background: #212429;
-margin-right: 20px;
+            margin-right: 20px;
+
             border-radius: 27px;
-            min-width: 200px;
+            min-width: 300px;
             width: 100%;
             max-width: 200px;
             height: 221px;
@@ -236,12 +278,27 @@ margin-right: 20px;
               font-weight: 300;
               font-size: 15px;
               line-height: 18px;
+              border-radius: 100%;
+              width: 70px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 70px;
+              background: linear-gradient(
+                  146.38deg,
+                  #fe3535 -17.66%,
+                  #6690fe 80.03%
+              );
 
               color: #ffffff;
+              p {
+                margin: 0;
+              }
             }
           }
         }
         &_recent {
+          margin-top: 10px;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -271,23 +328,32 @@ margin-right: 20px;
               align-items: center;
               &_body {
                 &_nav {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  text-align: center;
                   &_item {
                     font-style: normal;
                     font-weight: 700;
                     font-size: 20px;
                     line-height: 24px;
-
-                    color: #FFFFFF;
-
+                    margin-left: 25px;
+                    margin-right: 25px;
+                    color: #ffffff;
                   }
                 }
                 &_row {
+                  display: flex;
+                  justify-content: center;
+                  text-align: center;
+                  align-items: center;
                   &_item {
                     font-style: normal;
                     font-weight: 300;
                     font-size: 20px;
-                    line-height: 24px;
-                    color: #FFFFFF;
+                    margin-left: 40px;
+                    margin-right: 40px;
+                    color: #ffffff;
                   }
                 }
               }
@@ -306,17 +372,19 @@ margin-right: 20px;
               font-size: 24px;
               line-height: 29px;
 
-              color: #FFFFFF;
-
+              color: #ffffff;
             }
           }
           &_block {
             background: #212429;
             border-radius: 27px;
-            max-width: 791px;
-            min-width: 791px;
+            max-width: 391px;
+            min-width: 391px;
             height: 306px;
             width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
           }
         }
         &_analitycs {
@@ -331,21 +399,26 @@ margin-right: 20px;
               font-size: 24px;
               line-height: 29px;
 
-              color: #FFFFFF;
-
+              color: #ffffff;
             }
           }
           &_add {
             display: flex;
+            cursor: pointer;
             justify-content: center;
             align-items: center;
             border-radius: 27px;
             margin-bottom: 20px;
             max-width: 391px;
-            min-width: 391px;
+            min-width: 381px;
             border: 3px dashed #3a3a3a;
             height: 85px;
+            cursor: pointer;
+            p{
+              margin: 0;
+            }
             &_icon {
+              margin-right: 10px;
             }
             &_text {
               font-style: normal;
@@ -353,21 +426,25 @@ margin-right: 20px;
               font-size: 20px;
               line-height: 24px;
               color: #e64355;
+              margin-left: 20px;
             }
           }
+          &_add:hover{
+            background: #3a3a3a;
+          }
+
         }
       }
     }
   }
-  .desktop-ledbar{
+  .desktop-ledbar {
     display: none;
   }
-  .desktop_nav{
+  .desktop_nav {
     display: none;
   }
 }
 @media screen and (max-width: 1023px) {
-
   .dashboard {
     display: flex;
     width: 100%;
@@ -411,33 +488,34 @@ margin-right: 20px;
             margin-bottom: 20px;
 
             &_icon {
+              margin-bottom: 7px;
             }
             &_text {
             }
             &_chart {
+              font-style: normal;
+              font-weight: 300;
+              font-size: 15px;
+              line-height: 18px;
+              border-radius: 100%;
+              width: 60px;
               display: flex;
               justify-content: center;
               align-items: center;
-
-              width: 83px;
-              height: 83px;
+              height: 60px;
               background: linear-gradient(
-                146.38deg,
-                #fe3535 -17.66%,
-                #6690fe 80.03%
+                  146.38deg,
+                  #fe3535 -17.66%,
+                  #6690fe 80.03%
               );
-              border-radius: 50px;
+
+              color: #ffffff;
+              p {
+                margin: 0;
+              }
             }
-            &_chart::before {
-              content: "";
-              display: block;
-              border-radius: 50px;
-              width: 70px;
-              z-index: 1;
-              height: 70px;
-              background: #212429;
-              position: absolute;
-            }
+
+
           }
         }
         &_recent {
@@ -467,28 +545,62 @@ margin-right: 20px;
             justify-content: flex-start;
             align-items: flex-start;
             text-align: center;
+            flex-direction: column;
             &_table {
               display: flex;
               justify-content: center;
               align-items: center;
-
+flex-direction: column;
               &_body {
+                display: flex;
+                justify-content: space-evenly;
+
+                align-items: center;
                 &_nav {
+                  p{
+                    margin: 0!important;
+                  }
+                  display: flex;
+                  justify-content: center;
+                  flex-direction: column;
+                  align-items: center;
                   font-style: normal;
                   font-weight: 700;
                   font-size: 14px;
                   line-height: 17px;
                   color: #ffffff;
                   &_item {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 15px;
+                    line-height: 24px;
+                    margin-top: 25px;
+                    margin-bottom: 25px;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    color: #ffffff;
                   }
                 }
                 &_row {
+                  display: flex;
+                  justify-content: center;
+                  flex-direction: column;
+                  align-items: center;
                   font-style: normal;
                   font-weight: 300;
                   font-size: 15px;
                   line-height: 18px;
                   color: #ffffff;
                   &_item {
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 15px;
+                    margin-top: 25px;
+                    margin-bottom: 25px;
+                    margin-left: 20px;
+                    margin-right: 20px;
+
+                    color: #ffffff;
                   }
                 }
               }
@@ -537,26 +649,37 @@ margin-right: 20px;
             }
           }
           &_add {
-            border: 3px dashed #3a3a3a;
-            width: 100%;
-            max-width: 300px;
-            min-width: 300px;
-            border-radius: 27px;
-            text-align: center;
             display: flex;
             justify-content: center;
             align-items: center;
+            border-radius: 27px;
+            margin-bottom: 20px;
+            max-width: 300px;
+            min-width: 300px;
+            border: 3px dashed #3a3a3a;
             height: 80px;
+            cursor: pointer;
+            p{
+              margin: 0;
+            }
             &_icon {
+              margin-right: 10px;
             }
             &_text {
+              font-style: normal;
+              font-weight: 300;
+              font-size: 20px;
+              line-height: 24px;
+              color: #e64355;
+              margin-left: 20px;
             }
           }
+
         }
       }
     }
   }
-  .desktop-ledbar{
+  .desktop-ledbar {
     display: none;
   }
 }

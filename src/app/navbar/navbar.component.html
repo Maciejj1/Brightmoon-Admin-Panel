@@ -2,41 +2,48 @@
   <div class="navbar_container" *ngFor="let navbartext of navbartexts">
     <div class="navbar_container_base">
       <div class="navbar_container_base_title">
-        <img class="navbar_container_base_title_icon" [src]="" />
+        <img class="navbar_container_base_title_icon" [src]="logo" />
         <p class="navbar_container_base_title_text">
           {{ navbartext.navbarLogo }}
         </p>
       </div>
       <div class="navbar_container_base_items">
-        <div class="navbar_container_base_items_item">
-          <img class="navbar_container_base_items_item_icon" [src]="" />
+
+        <div class="navbar_container_base_items_item"><a href="/dashboard">
+          <img class="navbar_container_base_items_item_icon" [src]="dashboard" />
           <p class="navbar_container_base_items_item_text">
             {{ navbartext.navbarDashboard }}
-          </p>
+          </p></a>
         </div>
-        <div class="navbar_container_base_items_item">
-          <img class="navbar_container_base_items_item_icon" [src]="" />
+
+        <div class="navbar_container_base_items_item"> <a href="/dashboard">
+          <img class="navbar_container_base_items_item_icon" [src]="user" />
           <p class="navbar_container_base_items_item_text">
             {{ navbartext.navbarClients }}
-          </p>
+          </p></a>
         </div>
-        <div class="navbar_container_base_items_item">
-          <img class="navbar_container_base_items_item_icon" [src]="" />
+
+        <div class="navbar_container_base_items_item"><a href="/dashboard">
+          <img class="navbar_container_base_items_item_icon" [src]="analitycs" />
           <p class="navbar_container_base_items_item_text">
             {{ navbartext.navbarProducts }}
-          </p>
+          </p></a>
         </div>
         <div class="navbar_container_base_items_item">
-          <img class="navbar_container_base_items_item_icon" [src]="" />
+          <a href="/dashboard">
+          <img class="navbar_container_base_items_item_icon" [src]="analitycs" />
           <p class="navbar_container_base_items_item_text">
             {{ navbartext.navbarAnalitycs }}
           </p>
+          </a>
         </div>
         <div class="navbar_container_base_items_item">
-          <img class="navbar_container_base_items_item_icon" [src]="" />
+          <a href="/dashboard">
+          <img class="navbar_container_base_items_item_icon" [src]="settings" />
           <p class="navbar_container_base_items_item_text">
             {{ navbartext.navbarSettings }}
           </p>
+          </a>
         </div>
       </div>
     </div>

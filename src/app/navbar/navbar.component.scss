@@ -10,19 +10,25 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      text-align: center;
       min-width: 252px;
       max-width: 252px;
       height: 694px;
 
       &_base {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         &_title {
+          display: flex;
+          justify-content: center;
+          align-items: center;
           &_text {
             font-style: normal;
             font-weight: 700;
             font-size: 20px;
-            line-height: 24px;
             color: #ffffff;
+            margin: 0!important;
           }
 
           &_icon {
@@ -30,7 +36,28 @@
         }
 
         &_items {
-          &_item {
+          margin-top: 40px;
+          text-align: left;
+          p{
+            margin: 0;
+          }
+          a{
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            text-align: left;
+          }
+          &_item {margin-top: 40px;
+            width: 100%;
+            max-width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+            min-width: 200px;
+            text-decoration: none;
             &_icon {
             }
 
@@ -40,7 +67,12 @@
               font-size: 20px;
               line-height: 24px;
               color: #ffffff;
+              padding: 10px;
             }
+          }
+          &_item:hover{
+            background: #1F1F1F;
+
           }
         }
       }

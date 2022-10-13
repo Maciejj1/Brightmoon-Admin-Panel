@@ -16,7 +16,7 @@
       </div>
       <div class="dashboard_container_base_salesinfo">
         <div class="dashboard_container_base_salesinfo_block">
-          <img class="dashboard_container_base_salesinfo_block_icon" [src]="" />
+          <img class="dashboard_container_base_salesinfo_block_icon" [src]="sales" />
           <p class="dashboard_container_base_salesinfo_block_text">
             {{ dashboardtext.dashboardTotalSales }}
           </p>
@@ -24,28 +24,28 @@
             {{ dashboardtext.dashboardSalesCosts }}
           </p>
           <div class="dashboard_container_base_salesinfo_block_chart">
-            <p>90%</p>
+            <p class="dashboard_container_base_salesinfo_block_chart_text">90%</p>
           </div>
         </div>
         <div class="dashboard_container_base_salesinfo_block">
-          <img class="dashboard_container-base_salesinfo_block_icon" [src]="" />
+          <img class="dashboard_container_base_salesinfo_block_icon" [src]="expanses" />
           <p class="dashboard_container_base_salesinfo_block_text">
             {{ dashboardtext.dashboardTotalExpanses }}
           </p>
           <p class="dashboard_container_base_salesinfo_block_text">
             {{ dashboardtext.dashboardExpansesCosts }}
           </p>
-          <div class="dashboard_container_base_salesinfo_block_chart"></div>
+          <div class="dashboard_container_base_salesinfo_block_chart"><p class="dashboard_container_base_salesinfo_block_chart_text">90%</p></div>
         </div>
         <div class="dashboard_container_base_salesinfo_block">
-          <img class="dashboard_container_base_salesinfo_block_icon" [src]="" />
+          <img class="dashboard_container_base_salesinfo_block_icon" [src]="income" />
           <p class="dashboard_container_base_salesinfo_block_text">
             {{ dashboardtext.dashboardTotalIncome }}
           </p>
           <p class="dashboard_container_base_salesinfo_block_text">
             {{ dashboardtext.dashboardIncomeCosts }}
           </p>
-          <div class="dashboard_container_base_salesinfo_block_chart"></div>
+          <div class="dashboard_container_base_salesinfo_block_chart"><p class="dashboard_container_base_salesinfo_block_chart_text">90%</p></div>
         </div>
       </div>
       <div class="dashboard_container_base_recent">
@@ -66,7 +66,7 @@
                 <th
                   class="dashboard_container_base_recent_block_table_body_nav_item"
                 >
-                  Product Number
+                 Number
                 </th>
                 <th
                   class="dashboard_container_base_recent_block_table_body_nav_item"
@@ -117,7 +117,6 @@
         </div>
       </div>
     </div>
-    <div></div>
     <div class="dashboard_container_base_updates">
       <div class="dashboard_container_base_updates_title">
         <p class="dashboard_container_base_updates_title_text">
@@ -134,10 +133,10 @@
           </p>
         </div>
         <app-analitycs></app-analitycs>
-        <div class="dashboard_container_base_analitycs_add" >
-          <img class="dashboard_container_base_analitycs_add_icon" [src]="" />
+        <div class="dashboard_container_base_analitycs_add"(click)="modal.showDialog = true" >
+          <img class="dashboard_container_base_analitycs_add_icon" [src]="plus" />
           <p class="dashboard_container_base_analitycs_add_text" > AddProduct</p>
-          <button (click)="modal.showDialog = true">Click</button>
+
         </div>
       </div>
     </div>
