@@ -85,30 +85,4 @@
     display: none;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1600px) {
-  .mobilenav {
-    &_container {
-      &_burger {
-      }
-      &_items {
-        &_switch {
-        }
-      }
-    }
-  }
-  .mobilenav_side {
-    &_container {
-      &_title {
 
-        &_close {
-        }
-      }
-      &_items {
-        &_link:hover {
-        }
-        &_link {
-        }
-      }
-    }
-  }
-}
