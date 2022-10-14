@@ -1,148 +1,95 @@
-@media screen and (max-width: 1023px) {
-  .updates {
-    margin-top: -10px;
-    max-width: 391px;
-    min-width: 391px;
+.updates {
+  margin-top: -10px;
+  max-width: 391px;
+  min-width: 391px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  line-height: 0.5;
+  &_image {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 20px;
+    &_img {
+    }
+  }
+  &_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
-    height: auto;
-    line-height: 0.5;
-    &_image {
+    height: 100%;
+    flex-wrap: wrap;
+    margin-left: 30px;
+    margin-top: 30px;
+    &_user {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-left: 20px;
-      &_img {
+      width: 100%;
+      flex-wrap: wrap;
+      height: 50px;
+      &_image {
+        width: 50px;
+      }
+      &_name {
+        width: 100%;
+        min-width: 300px;
+        max-width: 200px;
+        margin-right: 2px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 0.5;
+        color: #ffffff;
+      }
+      &_information {
+        width: 100%;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        color: #ffffff;
       }
     }
-    &_text {
+    &_time {
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-direction: column;
-      width: 100%;
-      height: 100%;
-      flex-wrap: wrap;
-      margin-left: 30px;
-      margin-top: 30px;
-      &_user {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        flex-wrap: wrap;
-        height: 50px;
-        &_image {
-          width: 50px;
-        }
-        &_name {
-          width: 100%;
-          min-width: 300px;
-          max-width: 200px;
-          margin-right: 2px;
-          font-style: normal;
-          font-weight: 700;
-          font-size: 14px;
-          line-height: 0.5;
-          color: #ffffff;
-        }
-        &_information {
-          width: 100%;
-          font-style: normal;
-          font-weight: 400;
-          font-size: 14px;
-          color: #ffffff;
-        }
-      }
-      &_time {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 1px!important;
-        &_text {
-          font-style: normal;
-          font-weight: 300;
-          font-size: 10px;
+      margin: 1px !important;
+      &_text {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 10px;
 
-          line-height: 12px;
-          color: #686868;
-        }
+        line-height: 12px;
+        color: #686868;
       }
     }
   }
 }
+
 @media screen and (min-width: 1024px) {
   .updates {
-    margin-bottom: 0px;
-    max-width: 391px;
-    min-width: 391px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    line-height: 0.5;
+    margin-bottom: 0px !important;
     &_image {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-left: 20px;
       &_img {
       }
     }
     &_text {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      width: 100%;
-      height: 100%;
-      flex-wrap: wrap;
-      margin-left: 30px;
-      margin-top: 30px;
       &_user {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        flex-wrap: wrap;
-        height: 50px;
         &_image {
-          width: 50px;
         }
         &_name {
-          width: 100%;
-          min-width: 300px;
-          max-width: 200px;
-          margin-right: 2px;
-          font-style: normal;
-          font-weight: 700;
-          font-size: 14px;
-          line-height: 0.5;
-          color: #ffffff;
         }
         &_information {
-          width: 100%;
-          font-style: normal;
-          font-weight: 400;
-          font-size: 14px;
-          color: #ffffff;
         }
       }
       &_time {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 1px!important;
         &_text {
-          font-style: normal;
-          font-weight: 300;
-          font-size: 10px;
-
-          line-height: 12px;
-          color: #686868;
         }
       }
     }

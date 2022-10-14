@@ -1,32 +1,32 @@
-<div class="login">
-  <div class="login_container">
-    <div class="login_container_big_circle"></div>
-    <div class="login_container_small_circle"></div>
-    <div class="login_container_logotype">
-      <div class="login_container_logotype_logo">
-        <img [src]="logo" class="login_container_logotype_logo_logo" />
+<div class="component">
+  <div class="component_container">
+    <div class="component_container_big_circle"></div>
+    <div class="component_container_small_circle"></div>
+    <div class="component_container_logotype">
+      <div class="component_container_logotype_logo">
+        <img [src]="logo" class="component_container_logotype_logo_logo" />
       </div>
-      <div class="login_container_logotype_title_title">
-        <h5 class="login_container_logotype_title">BRIGHTMOON</h5>
+      <div class="component_container_logotype_title_title">
+        <h5 class="component_container_logotype_title">BRIGHTMOON</h5>
       </div>
 
     </div>
-    <div class="login_container_base">
-      <div class="login_container_base_form">
-        <div class="login_container_base_form_title">
-          <p class="login_container_base_form_title_text">REGISTER</p>
+    <div class="component_container_base">
+      <div class="component_container_base_form">
+        <div class="component_container_base_form_title">
+          <p class="component_container_base_form_title_text">REGISTER</p>
         </div>
-        <div class="login_container_base_form_inputs" >
-          <input type="email" class="login_container_base_form_inputs_input" placeholder="Email" [(ngModel)]="email" />
+        <div class="component_container_base_form_inputs" >
+          <input type="email" class="component_container_base_form_inputs_input" placeholder="Email" [(ngModel)]="email" />
           <input
             type="password"
-            class="login_container_base_form_inputs_input"
+            class="component_container_base_form_inputs_input"
             placeholder="Password"
             [(ngModel)]="password"
           />
         </div>
-        <div class="login_container_base_form_button">
-          <button class="login_container_base_form_button_button" (click)="register()">Register</button>
+        <div class="component_container_base_form_button">
+          <button class="component_container_base_form_button_button" (click)="register()">Register</button>
         </div>
       </div>
     </div>

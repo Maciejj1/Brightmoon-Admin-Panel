@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Route, Router } from '@angular/router';
 
 @Component({
   selector: 'app-verify-email',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VerifyEmailComponent implements OnInit {
   logo = 'assets/images/logo.png';
-  constructor() {}
-
+  constructor(private route: Router) {}
+  goToLogin() {
+    this.route.navigate(['/login']);
+  }
   ngOnInit(): void {}
 }

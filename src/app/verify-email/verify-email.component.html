@@ -1,18 +1,17 @@
-<div class="login">
-  <div class="login_container">
-    <div class="login_container_big_circle"></div>
-    <div class="login_container_small_circle"></div>
-    <div class="login_container_logotype">
-      <div class="login_container_logotype_logo">
-        <img [src]="logo" class="login_container_logotype_logo_logo" />
+<div class="component">
+  <div class="component_container">
+    <div class="component_container_big_circle"></div>
+    <div class="component_container_small_circle"></div>
+    <div class="component_container_logotype">
+      <div class="component_container_logotype_logo">
+        <img [src]="logo" class="component_container_logotype_logo_logo" />
       </div>
-      <div class="login_container_logotype_title_title">
-        <h5 class="login_container_logotype_title">BRIGHTMOON</h5>
+      <div class="component_container_logotype_title_title">
+        <h5 class="component_container_logotype_title">BRIGHTMOON</h5>
       </div>
-
     </div>
-    <div class="login_container_base">
-      <form class="login_container_form">
+    <div class="component_container_base">
+      <form class="component_container_form">
         <div class="mb-3">
           <h4 class="text-danger text-muted h3">Welcome</h4>
         </div>
@@ -21,9 +20,16 @@
             Link has sent on your register email. Please verify it.
           </p>
         </div>
+        <div class="component_container_base_form_button">
+          <p class="text-muted blockquote">You verify your email?</p>
+          <button
+            class="component_container_base_form_button_button"
+            (click)="goToLogin()"
+          >
+            Login
+          </button>
+        </div>
       </form>
-
     </div>
   </div>
 </div>
-
