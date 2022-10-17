@@ -1,113 +1,113 @@
 <app-ledbar class="desktop-ledbar"></app-ledbar>
 
-<div class="dashboard">
+<div class="brightmoon">
 
 
 
-  <div class="dashboard_container" *ngFor="let dashboardtext of dashboardtexts">
-    <app-navbar class="desktop_nav"></app-navbar>
+  <div class="brightmoon_container" *ngFor="let dashboardtext of dashboardtexts">
+    <app-navbar class="brightmoon_nav"></app-navbar>
     <app-mobilenav></app-mobilenav>
-    <div class="dashboard_container_base">
+    <div class="brightmoon_container_base">
       <app-addproduct *ngIf="modal.showDialog" ></app-addproduct>
-      <div class="dashboard_container_base_title">
-        <h1 class="dashboard_container_base_title_text">
+      <div class="brightmoon_container_base_title">
+        <h1 class="brightmoon_container_base_title_text">
           {{ dashboardtext.dashboardTitle }}
         </h1>
       </div>
-      <div class="dashboard_container_base_salesinfo">
-        <div class="dashboard_container_base_salesinfo_block">
-          <img class="dashboard_container_base_salesinfo_block_icon" [src]="sales" />
-          <p class="dashboard_container_base_salesinfo_block_text">
+      <div class="brightmoon_container_base_salesinfo">
+        <div class="brightmoon_container_base_salesinfo_block">
+          <img class="brightmoon_container_base_salesinfo_block_icon" [src]="sales" />
+          <p class="brightmoon_container_base_salesinfo_block_text">
             {{ dashboardtext.dashboardTotalSales }}
           </p>
-          <p class="dashboard_container_base_salesinfo_block_text">
+          <p class="brightmoon_container_base_salesinfo_block_text">
             {{ dashboardtext.dashboardSalesCosts }}
           </p>
-          <div class="dashboard_container_base_salesinfo_block_chart">
-            <p class="dashboard_container_base_salesinfo_block_chart_text">90%</p>
+          <div class="brightmoon_container_base_salesinfo_block_chart">
+            <p class="brightmoon_container_base_salesinfo_block_chart_text">90%</p>
           </div>
         </div>
-        <div class="dashboard_container_base_salesinfo_block">
-          <img class="dashboard_container_base_salesinfo_block_icon" [src]="expanses" />
-          <p class="dashboard_container_base_salesinfo_block_text">
+        <div class="brightmoon_container_base_salesinfo_block">
+          <img class="brightmoon_container_base_salesinfo_block_icon" [src]="expanses" />
+          <p class="brightmoon_container_base_salesinfo_block_text">
             {{ dashboardtext.dashboardTotalExpanses }}
           </p>
-          <p class="dashboard_container_base_salesinfo_block_text">
+          <p class="brightmoon_container_base_salesinfo_block_text">
             {{ dashboardtext.dashboardExpansesCosts }}
           </p>
-          <div class="dashboard_container_base_salesinfo_block_chart"><p class="dashboard_container_base_salesinfo_block_chart_text">90%</p></div>
+          <div class="brightmoon_container_base_salesinfo_block_chart"><p class="dashboard_container_base_salesinfo_block_chart_text">90%</p></div>
         </div>
-        <div class="dashboard_container_base_salesinfo_block">
-          <img class="dashboard_container_base_salesinfo_block_icon" [src]="income" />
-          <p class="dashboard_container_base_salesinfo_block_text">
+        <div class="brightmoon_container_base_salesinfo_block">
+          <img class="brightmoon_container_base_salesinfo_block_icon" [src]="income" />
+          <p class="brightmoon_container_base_salesinfo_block_text">
             {{ dashboardtext.dashboardTotalIncome }}
           </p>
-          <p class="dashboard_container_base_salesinfo_block_text">
+          <p class="brightmoon_container_base_salesinfo_block_text">
             {{ dashboardtext.dashboardIncomeCosts }}
           </p>
-          <div class="dashboard_container_base_salesinfo_block_chart"><p class="dashboard_container_base_salesinfo_block_chart_text">90%</p></div>
+          <div class="brightmoon_container_base_salesinfo_block_chart"><p class="dashboard_container_base_salesinfo_block_chart_text">90%</p></div>
         </div>
       </div>
-      <div class="dashboard_container_base_recent">
-        <div class="dashboard_container_base_recent_title">
-          <p class="dashboard_container_base_recent_title_text">
+      <div class="brightmoon_container_base_recent">
+        <div class="brightmoon_container_base_recent_title">
+          <p class="brightmoon_container_base_recent_title_text">
             Recent Products
           </p>
         </div>
-        <div class="dashboard_container_base_recent_block">
-          <table class="dashboard_container_base_recent_block_table">
-            <tbody class="dashboard_container_base_recent_block_table_body">
-              <tr class="dashboard_container_base_recent_block_table_body_nav">
+        <div class="brightmoon_container_base_recent_block">
+          <table class="brightmoon_container_base_recent_block_table">
+            <tbody class="brightmoon_container_base_recent_block_table_body">
+              <tr class="brightmoon_container_base_recent_block_table_body_nav">
                 <th
-                  class="dashboard_container_base_recent_block_table_body_nav_item"
+                  class="brightmoon_container_base_recent_block_table_body_nav_item"
                 >
                   Product Name
                 </th>
                 <th
-                  class="dashboard_container_base_recent_block_table_body_nav_item"
+                  class="brightmoon_container_base_recent_block_table_body_nav_item"
                 >
                  Number
                 </th>
                 <th
-                  class="dashboard_container_base_recent_block_table_body_nav_item"
+                  class="brightmoon_container_base_recent_block_table_body_nav_item"
                 >
                   Payment
                 </th>
                 <th
-                  class="dashboard_container_base_recent_block_table_body_nav_item"
+                  class="brightmoon_container_base_recent_block_table_body_nav_item"
                 >
                   Status
                 </th>
                 <th
-                  class="dashboard_container_base_recent_block_table_body_nav_item"
+                  class="brightmoon_container_base_recent_block_table_body_nav_item"
                 >
                   Action
                 </th>
               </tr>
-              <tr class="dashboard_container_base_recent_block_table_body_row" *ngFor="let product of productsList ">
+              <tr class="brightmoon_container_base_recent_block_table_body_row" *ngFor="let product of productsList ">
                 <td
-                  class="dashboard_container_base_recent_block_table_body_row_item"
+                  class="brightmoon_container_base_recent_block_table_body_row_item"
 
                 >
                   {{product.ProductName}}
                 </td>
                 <td
-                  class="dashboard_container_base_recent_block_table_body_row_item"
+                  class="brightmoon_container_base_recent_block_table_body_row_item"
                 >
                   {{product.ProductNumber}}
                 </td>
                 <td
-                  class="dashboard_container_base_recent_block_table_body_row_item"
+                  class="brightmoon_container_base_recent_block_table_body_row_item"
                 >
                   {{product.ProductPayment}}
                 </td>
                 <td
-                class="dashboard_container_base_recent_block_table_body_row_item"
+                class="brightmoon_container_base_recent_block_table_body_row_item"
               >
                   {{product.ProductStatus}}
               </td>
                 <td
-                  class="dashboard_container_base_recent_block_table_body_row_item"
+                  class="brightmoon_container_base_recent_block_table_body_row_item"
                 >
                   <button class="btn btn-outline-danger" (click)="deleteProduct(product)">Delete</button>
                 </td>
@@ -117,25 +117,25 @@
         </div>
       </div>
     </div>
-    <div class="dashboard_container_base_updates">
-      <div class="dashboard_container_base_updates_title">
-        <p class="dashboard_container_base_updates_title_text">
+    <div class="brightmoon_container_base_updates">
+      <div class="brightmoon_container_base_updates_title">
+        <p class="brightmoon_container_base_updates_title_text">
           {{ dashboardtext.dashboardLastUpdates }}
         </p>
       </div>
-      <div class="dashboard_container_base_updates_block">
+      <div class="brightmoon_container_base_updates_block">
         <app-updates></app-updates>
       </div>
-      <div class="dashboard_container_base_analitycs">
-        <div class="dashboard_container_base_analitycs_title">
-          <p class="dashboard_container_base_analitycs_title_text">
+      <div class="brightmoon_container_base_analitycs">
+        <div class="brightmoon_container_base_analitycs_title">
+          <p class="brightmoon_container_base_analitycs_title_text">
             {{ dashboardtext.dashboardSalesAnalitycs }}
           </p>
         </div>
         <app-analitycs></app-analitycs>
-        <div class="dashboard_container_base_analitycs_add"(click)="modal.showDialog = true" >
-          <img class="dashboard_container_base_analitycs_add_icon" [src]="plus" />
-          <p class="dashboard_container_base_analitycs_add_text" > AddProduct</p>
+        <div class="brightmoon_container_base_analitycs_add"(click)="modal.showDialog = true" >
+          <img class="brightmoon_container_base_analitycs_add_icon" [src]="plus" />
+          <p class="brightmoon_container_base_analitycs_add_text" > AddProduct</p>
 
         </div>
       </div>
