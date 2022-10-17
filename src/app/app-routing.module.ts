@@ -6,6 +6,8 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { RegisterComponent } from './register/register.component';
 import { VerifyEmailComponent } from './verify-email/verify-email.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { PromotionsComponent } from './promotions/promotions.component';
+import { ClientsComponent } from './clients/clients.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
@@ -14,6 +16,8 @@ const routes: Routes = [
   { path: 'verify-email', component: VerifyEmailComponent },
   { path: 'forgot-password', component: ForgotPasswordComponent },
   { path: 'dashboard', component: DashboardComponent },
+  { path: 'promotions', component: PromotionsComponent },
+  { path: 'clients', component: ClientsComponent },
   { path: '**', component: PagenotfoundComponent },
 ];
 

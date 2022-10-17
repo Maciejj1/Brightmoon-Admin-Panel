@@ -32,7 +32,6 @@ html {
     &_container {
       z-index: 3;
 
-
       &_big_circle {
         width: 714px !important;
         height: 714px !important;
@@ -49,7 +48,6 @@ html {
 
       &_base {
         &_form {
-
           &_inputs {
             &_input {
               min-width: 431px !important;
@@ -76,7 +74,6 @@ html {
 @media screen and (min-width: 1024px) and (max-width: 1600px) {
   .component {
     &_container {
-
       &_big_circle {
         width: 614px !important;
         height: 614px !important;
@@ -287,6 +284,537 @@ html {
             font-weight: 400;
             font-size: 20px;
             line-height: 29px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1601px) {
+  .brightmoon {
+    height: auto;
+    &_container {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      min-height: 100vh;
+      max-height: 100vh;
+      justify-content: space-between;
+      background-color: #19191f;
+      flex: auto;
+      flex-grow: 1;
+      &_base {
+        &_title {
+          padding-bottom: 10px;
+          align-items: center;
+          justify-content: flex-start;
+          display: flex;
+          &_text {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 58px;
+            color: #ffffff;
+          }
+        }
+        &_salesinfo {
+          margin-left: 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          &_block {
+            min-width: 250px !important;
+            max-width: 250px !important;
+            height: 221px !important;
+            &_icon {
+              margin-bottom: 20px !important;
+            }
+            &_text {
+              font-style: normal;
+              font-weight: 700;
+              font-size: 15px;
+              line-height: 18px;
+              color: #ffffff;
+            }
+            &_chart {
+              width: 70px !important;
+              height: 70px !important;
+            }
+          }
+        }
+        &_recent {
+          margin-top: 50px !important;
+          margin-left: 20px !important;
+          &_title {
+            &_text {
+              height: 10px;
+            }
+          }
+          &_block {
+            min-width: 887px !important;
+            margin-top: 60px !important;
+            max-width: 887px !important;
+            height: 347px !important;
+            padding: 0px !important;
+            &_table {
+              &_body {
+                flex-direction: column;
+                &_nav {
+                  text-align: center;
+                  &_item {
+                    font-size: 20px !important;
+                    margin-left: 25px !important;
+                    margin-right: 25px !important;
+                  }
+                }
+                &_row {
+                  text-align: center;
+                  &_item {
+                    font-size: 20px !important;
+                    margin-left: 40px !important;
+                    margin-right: 40px !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+        &_updates {
+          justify-content: flex-start;
+          align-items: flex-start;
+          margin-right: 20px !important;
+          &_title {
+            margin-top: 10px !important;
+            &_text {
+            }
+          }
+          &_block {
+            max-width: 391px !important;
+            min-width: 391px !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+        &_analitycs {
+          &_title {
+            &_text {
+            }
+          }
+          &_add {
+            max-width: 391px !important;
+            min-width: 381px !important;
+            height: 85px !important;
+            &_icon {
+            }
+            &_text {
+            }
+          }
+          &_add:hover {
+            background: #3a3a3a;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1600px) {
+  .brightmoon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &_container {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: #19191f;
+      &_base {
+        &_title {
+          height: 100%;
+          max-height: 500px;
+          min-height: 220px;
+          align-items: center;
+          justify-content: center;
+          display: flex;
+          &_text {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 58px;
+            color: #ffffff;
+          }
+        }
+        &_salesinfo {
+          justify-content: space-evenly;
+          &_block {
+            margin-right: 20px !important;
+            height: 221px !important;
+
+            &_icon {
+            }
+            &_text {
+              font-style: normal;
+              font-weight: 700;
+              font-size: 15px;
+              line-height: 18px;
+              color: #ffffff;
+            }
+            &_chart {
+              width: 70px !important;
+              height: 70px !important;
+            }
+          }
+        }
+        &_recent {
+          margin-top: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          &_title {
+            &_text {
+            }
+          }
+          &_block {
+            min-width: 787px !important;
+            margin-top: 60px !important;
+            max-width: 787px !important;
+            height: 347px !important;
+            padding: 0px !important;
+            &_table {
+              &_body {
+                &_nav {
+                  text-align: center;
+                  &_item {
+                    font-size: 20px !important;
+                    line-height: 24px !important;
+                    margin-left: 25px !important;
+                    margin-right: 25px !important;
+                  }
+                }
+                &_row {
+                  text-align: center;
+                  &_item {
+                    font-size: 20px !important;
+                    margin-left: 40px !important;
+                    margin-right: 40px !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+        &_updates {
+          justify-content: center;
+          align-items: center;
+          &_title {
+            &_text {
+            }
+          }
+          &_block {
+            max-width: 391px !important;
+            min-width: 391px !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+        &_analitycs {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          &_title {
+            &_text {
+            }
+          }
+          &_add {
+            max-width: 391px !important;
+            min-width: 381px !important;
+            height: 85px !important;
+            cursor: pointer !important;
+            &_icon {
+            }
+            &_text {
+            }
+          }
+          &_add:hover {
+            background: #3a3a3a;
+          }
+        }
+      }
+    }
+  }
+  .desktop-ledbar {
+    display: none;
+  }
+  .desktop_nav {
+    display: none;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .brightmoon {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    &_container {
+      color: white;
+      background: #19191f;
+      width: 100%;
+      &_base {
+        justify-content: center;
+        align-items: center;
+        &_title {
+          padding: 70px;
+          height: 30px;
+        }
+        &_salesinfo {
+          flex-direction: column;
+          justify-content: center;
+        }
+        &_recent {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          &_block {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            text-align: center;
+            flex-direction: column;
+            &_table {
+              flex-direction: column;
+              &_body {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                &_nav {
+                  p {
+                    margin: 0 !important;
+                  }
+                  display: flex;
+                  justify-content: center;
+                  flex-direction: column;
+                  align-items: center;
+                  font-style: normal;
+                  font-weight: 700;
+                  font-size: 14px;
+                  line-height: 17px;
+                  color: #ffffff;
+                  &_item {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 15px;
+                    line-height: 24px;
+                    margin-top: 25px;
+                    margin-bottom: 25px;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    color: #ffffff;
+                  }
+                }
+                &_row {
+                  flex-direction: column;
+                }
+              }
+            }
+          }
+        }
+        &_updates {
+          justify-content: center;
+          align-items: center;
+        }
+        &_analitycs {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
+.brightmoon {
+  &_container {
+    &_base {
+      display: flex;
+      flex-direction: column;
+      &_title {
+        &_text {
+        }
+      }
+      &_salesinfo {
+        display: flex;
+        align-items: center;
+
+        &_block {
+          background: #212429;
+          border-radius: 27px;
+          width: 100%;
+          min-width: 300px;
+          height: 200px;
+          max-width: 300px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          margin-bottom: 20px;
+
+          &_icon {
+            margin-bottom: 7px;
+          }
+          &_text {
+          }
+          &_chart {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 18px;
+            border-radius: 100%;
+            width: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+            background: linear-gradient(
+              146.38deg,
+              #fe3535 -17.66%,
+              #6690fe 80.03%
+            );
+
+            color: #ffffff;
+            p {
+              margin: 0;
+            }
+          }
+        }
+      }
+      &_recent {
+        &_title {
+          &_text {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            color: #ffffff;
+          }
+        }
+        &_block {
+          background: #212429;
+          border-radius: 27px;
+          width: 100%;
+          min-width: 296px;
+          max-width: 296px;
+          height: 480px;
+          &_table {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &_body {
+              &_nav {
+                p {
+                  margin: 0 !important;
+                }
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &_item {
+                  font-style: normal;
+                  font-weight: 700;
+                  font-size: 15px;
+                  line-height: 24px;
+                  margin-top: 25px;
+                  margin-bottom: 25px;
+                  margin-left: 20px;
+                  margin-right: 20px;
+                  color: #ffffff;
+                }
+              }
+              &_row {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &_item {
+                  font-style: normal;
+                  line-height: 18px;
+                  font-weight: 300;
+                  font-size: 15px;
+                  margin-top: 25px;
+                  margin-bottom: 25px;
+                  margin-left: 20px;
+                  margin-right: 20px;
+                  color: #ffffff;
+                }
+              }
+            }
+          }
+        }
+      }
+      &_updates {
+        display: flex;
+        flex-direction: column;
+
+        &_title {
+          &_text {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            color: #ffffff;
+          }
+        }
+        &_block {
+          background: #212429;
+          border-radius: 27px;
+          height: 300px;
+          width: 100%;
+          max-width: 300px;
+          min-width: 300px;
+        }
+      }
+      &_analitycs {
+        &_title {
+          &_text {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+
+            color: #ffffff;
+          }
+        }
+        &_add {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 27px;
+          margin-bottom: 20px;
+          max-width: 300px;
+          min-width: 300px;
+          border: 3px dashed #3a3a3a;
+          height: 80px;
+          cursor: pointer;
+          p {
+            margin: 0;
+          }
+          &_icon {
+            margin-right: 10px;
+          }
+          &_text {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 24px;
+            color: #e64355;
+            margin-left: 20px;
           }
         }
       }

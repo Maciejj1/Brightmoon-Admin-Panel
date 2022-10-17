@@ -9,42 +9,27 @@
       </div>
       <div class="navbar_container_base_items">
 
-        <div class="navbar_container_base_items_item"><a href="/dashboard">
+        <div class="navbar_container_base_items_item"><a (click)="goToDashboard()">
           <img class="navbar_container_base_items_item_icon" [src]="dashboard" />
           <p class="navbar_container_base_items_item_text">
             {{ navbartext.navbarDashboard }}
           </p></a>
         </div>
 
-        <div class="navbar_container_base_items_item"> <a href="/dashboard">
+        <div class="navbar_container_base_items_item"> <a (click)="goToClients()">
           <img class="navbar_container_base_items_item_icon" [src]="user" />
           <p class="navbar_container_base_items_item_text">
             {{ navbartext.navbarClients }}
           </p></a>
         </div>
 
-        <div class="navbar_container_base_items_item"><a href="/dashboard">
+        <div class="navbar_container_base_items_item"><a (click)="goToPromotions()">
           <img class="navbar_container_base_items_item_icon" [src]="analitycs" />
           <p class="navbar_container_base_items_item_text">
-            {{ navbartext.navbarProducts }}
+            {{ navbartext.navbarPromotions }}
           </p></a>
         </div>
-        <div class="navbar_container_base_items_item">
-          <a href="/dashboard">
-          <img class="navbar_container_base_items_item_icon" [src]="analitycs" />
-          <p class="navbar_container_base_items_item_text">
-            {{ navbartext.navbarAnalitycs }}
-          </p>
-          </a>
-        </div>
-        <div class="navbar_container_base_items_item">
-          <a href="/dashboard">
-          <img class="navbar_container_base_items_item_icon" [src]="settings" />
-          <p class="navbar_container_base_items_item_text">
-            {{ navbartext.navbarSettings }}
-          </p>
-          </a>
-        </div>
+
       </div>
     </div>
   </div>

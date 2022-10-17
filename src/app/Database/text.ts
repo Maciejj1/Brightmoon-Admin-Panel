@@ -1,8 +1,8 @@
-export interface Text{
+export interface Text {
   navbarLogo: string;
   navbarDashboard: string;
   navbarClients: string;
-  navbarProducts: string;
+  navbarPromotions: string;
   navbarAnalitycs: string;
   navbarSettings: string;
   dashboardTitle: string;

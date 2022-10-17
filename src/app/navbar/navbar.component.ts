@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Text } from '../Database/text';
 import { NavBarTexts } from '../Database/texts';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -13,8 +14,17 @@ export class NavbarComponent implements OnInit {
   user = 'assets/images/navbar-icons/user.png';
   products = 'assets/images/navbar-icons/Frame3.png';
   dashboard = 'assets/images/navbar-icons/Frame.png';
-  constructor() {}
 
+  constructor(private route: Router) {}
+  goToDashboard() {
+    this.route.navigate(['/dashboard']);
+  }
+  goToClients() {
+    this.route.navigate(['/clients']);
+  }
+  goToPromotions() {
+    this.route.navigate(['/promotions']);
+  }
   ngOnInit(): void {}
   navbartexts: Text[] = NavBarTexts;
 }

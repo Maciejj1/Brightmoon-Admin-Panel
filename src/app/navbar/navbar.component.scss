@@ -7,9 +7,6 @@
     &_container {
       color: #fff;
       background: #212429;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       min-width: 252px;
       max-width: 252px;
       height: 694px;
@@ -21,6 +18,7 @@
         flex-direction: column;
         &_title {
           display: flex;
+          margin-top: 10px;
           justify-content: center;
           align-items: center;
           &_text {

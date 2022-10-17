@@ -29,6 +29,8 @@ import { FormsModule } from '@angular/forms';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { VerifyEmailComponent } from './verify-email/verify-email.component';
 import { AddproductComponent } from './addproduct/addproduct.component';
+import { ClientsComponent } from './clients/clients.component';
+import { PromotionsComponent } from './promotions/promotions.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +47,8 @@ import { AddproductComponent } from './addproduct/addproduct.component';
     ForgotPasswordComponent,
     VerifyEmailComponent,
     AddproductComponent,
+    ClientsComponent,
+    PromotionsComponent,
   ],
   imports: [
     BrowserModule,
