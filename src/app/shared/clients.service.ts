@@ -18,7 +18,7 @@ export class ClientsService {
   }
   // remove clients
   removeClient(client: Client) {
-    return this.ans.doc('/BrightMoonClients' + client.id).delete();
+    return this.ans.doc('/BrightMoonClients/' + client.id).delete();
   }
 
   //update Client

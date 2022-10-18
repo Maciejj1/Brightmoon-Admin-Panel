@@ -31,6 +31,7 @@ import { VerifyEmailComponent } from './verify-email/verify-email.component';
 import { AddproductComponent } from './addproduct/addproduct.component';
 import { ClientsComponent } from './clients/clients.component';
 import { PromotionsComponent } from './promotions/promotions.component';
+import { AddclientComponent } from './addclient/addclient.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { PromotionsComponent } from './promotions/promotions.component';
     AddproductComponent,
     ClientsComponent,
     PromotionsComponent,
+    AddclientComponent,
   ],
   imports: [
     BrowserModule,

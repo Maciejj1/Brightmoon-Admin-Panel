@@ -19,11 +19,11 @@
           <table class="brightmoon_container_base_recent_block_table">
             <tbody class="brightmoon_container_base_recent_block_table_body">
             <tr class="brightmoon_container_base_recent_block_table_body_nav">
-              <th
+              <td
                 class="brightmoon_container_base_recent_block_table_body_nav_item"
               >
                 Name
-              </th>
+              </td>
               <th
                 class="brightmoon_container_base_recent_block_table_body_nav_item"
               >
@@ -45,23 +45,23 @@
                 Action
               </th>
             </tr>
-            <tr class="brightmoon_container_base_recent_block_table_body_row">
+            <tr class="brightmoon_container_base_recent_block_table_body_row" *ngFor="let promotion of PromotionList">
               <td
                 class="brightmoon_container_base_recent_block_table_body_row_item"
-              ></td>
+              >{{promotion.name}}</td>
               <td
                 class="brightmoon_container_base_recent_block_table_body_row_item"
-              ></td>
+              >{{promotion.code}}</td>
               <td
                 class="brightmoon_container_base_recent_block_table_body_row_item"
-              ></td>
+              >{{promotion.value}}</td>
               <td
                 class="brightmoon_container_base_recent_block_table_body_row_item"
-              ></td>
+              >{{promotion.time}}</td>
               <td
                 class="brightmoon_container_base_recent_block_table_body_row_item"
               >
-                <button class="btn btn-outline-danger">Delete</button>
+                <button class="btn btn-outline-danger" (click)="deletePromotion(promotion)">Delete</button>
               </td>
             </tr>
             </tbody>

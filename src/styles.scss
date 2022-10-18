@@ -345,10 +345,15 @@ html {
         &_recent {
           margin-top: 50px !important;
           margin-left: 20px !important;
+
           &_title {
             &_text {
-              height: 10px;
             }
+          }
+          &_block_clients {
+            min-width: 896px;
+            max-width: 896px;
+            height: 580px;
           }
           &_block {
             min-width: 887px !important;
@@ -478,6 +483,11 @@ html {
             &_text {
             }
           }
+          &_block_clients {
+            min-width: 896px;
+            max-width: 896px;
+            height: 580px;
+          }
           &_block {
             min-width: 787px !important;
             margin-top: 60px !important;
@@ -548,10 +558,10 @@ html {
       }
     }
   }
-  .desktop-ledbar {
+  .brightmoon-ledbar {
     display: none;
   }
-  .desktop_nav {
+  .brightmoon_nav {
     display: none;
   }
 }
@@ -583,6 +593,12 @@ html {
           justify-content: center;
           align-items: center;
           flex-direction: column;
+          &_block_clients {
+            min-width: 296px;
+            max-width: 296px;
+            overflow: auto;
+            height: 380px;
+          }
           &_block {
             display: flex;
             justify-content: flex-start;
@@ -696,6 +712,7 @@ html {
           }
         }
       }
+
       &_recent {
         &_title {
           &_text {
@@ -705,6 +722,11 @@ html {
             line-height: 29px;
             color: #ffffff;
           }
+        }
+        &_block_clients {
+          background: #212429;
+          border-radius: 27px;
+          width: 100%;
         }
         &_block {
           background: #212429;
@@ -817,6 +839,42 @@ html {
             margin-left: 20px;
           }
         }
+      }
+    }
+  }
+}
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  &_container {
+    position: absolute;
+    width: 495px;
+    height: 679px;
+    left: 698px;
+    top: 210px;
+    background: #212429;
+    &_base {
+      &_close {
+      }
+      &_title {
+      }
+      &_items {
+        &_item {
+          border: none;
+          color: #999999;
+          font-size: 15px;
+
+          border-bottom: 2px solid #ffffff;
+        }
+      }
+      &_button {
       }
     }
   }

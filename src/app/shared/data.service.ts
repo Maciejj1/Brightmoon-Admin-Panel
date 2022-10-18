@@ -22,7 +22,7 @@ export class DataService {
   // delete product
 
   deleteProduct(product: Products) {
-    return this.afs.doc('/BrightMoonProducts' + product.id).delete();
+    return this.afs.doc('/BrightMoonProducts/' + product.id).delete();
   }
   //update product
 

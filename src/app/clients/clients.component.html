@@ -1,1 +1,114 @@
-<p>clients works!</p>
+<app-ledbar class="desktop-ledbar"></app-ledbar>
+
+<div class="brightmoon">
+  <div class="brightmoon_container">
+    <app-navbar class="brightmoon_nav"></app-navbar>
+    <app-mobilenav></app-mobilenav>
+    <div class="brightmoon_container_base align-items-center">
+      <app-addclient *ngIf="model.showDialog"></app-addclient>
+      <!--      <app-addproduct  ></app-addproduct>-->
+      <div class="brightmoon_container_base_title">
+        <h1 class="brightmoon_container_base_title_text mt-4">Clients</h1>
+      </div>
+      <div class="brightmoon_container_base_recent">
+        <div class="brightmoon_container_base_recent_title"></div>
+        <div class="brightmoon_container_base_recent_block_clients">
+          <table
+            class="brightmoon_container_base_recent_block_table"
+            *ngFor="let client of clientList"
+          >
+            <tbody class="brightmoon_container_base_recent_block_table_body">
+              <tr class="brightmoon_container_base_recent_block_table_body_nav">
+                <th
+                  class="brightmoon_container_base_recent_block_table_body_nav_item"
+                >
+                  Name
+                </th>
+                <th
+                  class="brightmoon_container_base_recent_block_table_body_nav_item"
+                >
+                  Surname
+                </th>
+                <th
+                  class="brightmoon_container_base_recent_block_table_body_nav_item"
+                >
+                  Email
+                </th>
+                <th
+                  class="brightmoon_container_base_recent_block_table_body_nav_item"
+                >
+                  Tel
+                </th>
+                <th
+                  class="brightmoon_container_base_recent_block_table_body_nav_item"
+                >
+                  Action
+                </th>
+              </tr>
+              <tr class="brightmoon_container_base_recent_block_table_body_row">
+                <td
+                  class="brightmoon_container_base_recent_block_table_body_row_item"
+                >
+                  {{ client.name }}
+                </td>
+                <td
+                  class="brightmoon_container_base_recent_block_table_body_row_item"
+                >
+                  {{ client.surname }}
+                </td>
+                <td
+                  class="brightmoon_container_base_recent_block_table_body_row_item"
+                >
+                  {{ client.email }}
+                </td>
+                <td
+                  class="brightmoon_container_base_recent_block_table_body_row_item"
+                >
+                  {{ client.tel }}
+                </td>
+                <td
+                  class="brightmoon_container_base_recent_block_table_body_row_item"
+                >
+                  <button class="btn btn-outline-danger">Delete</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div
+        class="brightmoon_container_base_analitycs_add m-4"
+        (click)="model.showDialog = true"
+      >
+        <img
+          class="brightmoon_container_base_analitycs_add_icon"
+          [src]="plus"
+        />
+        <p class="brightmoon_container_base_analitycs_add_text">AddClient</p>
+      </div>
+    </div>
+    <div class="brightmoon_container_base_updates">
+      <div class="brightmoon_container_base_updates_title">
+        <p class="brightmoon_container_base_updates_title_text">
+          Online Clients
+        </p>
+      </div>
+      <div
+        class="brightmoon_container_base_updates_block d-flex justify-content-center align-items-center flex-column"
+      >
+        <div
+          class="brightmoon_container_base_salesinfo_block_text d-flex justify-content-center flex-column align-items-center"
+        >
+          <p>Online Clients</p>
+          <p>Last 24 hours</p>
+        </div>
+        <div class="brightmoon_container_base_salesinfo_block_chart"></div>
+      </div>
+      <div class="brightmoon_container_base_analitycs">
+        <div class="brightmoon_container_base_analitycs_title">
+          <p class="brightmoon_container_base_analitycs_title_text m-4">????</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
