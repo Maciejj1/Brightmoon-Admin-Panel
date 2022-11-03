@@ -5,8 +5,7 @@
     <app-navbar class="brightmoon_nav"></app-navbar>
     <app-mobilenav></app-mobilenav>
     <div class="brightmoon_container_base align-items-center">
-      <app-addclient *ngIf="model.showDialog"></app-addclient>
-      <!--      <app-addproduct  ></app-addproduct>-->
+      <app-addclient *ngIf="modal.showClients" ></app-addclient>
       <div class="brightmoon_container_base_title">
         <h1 class="brightmoon_container_base_title_text mt-4">Clients</h1>
       </div>
@@ -15,7 +14,6 @@
         <div class="brightmoon_container_base_recent_block_clients">
           <table
             class="brightmoon_container_base_recent_block_table"
-            *ngFor="let client of clientList"
           >
             <tbody class="brightmoon_container_base_recent_block_table_body">
               <tr class="brightmoon_container_base_recent_block_table_body_nav">
@@ -45,7 +43,8 @@
                   Action
                 </th>
               </tr>
-              <tr class="brightmoon_container_base_recent_block_table_body_row">
+              <tr class="brightmoon_container_base_recent_block_table_body_row"
+                  *ngFor="let client of clientList">
                 <td
                   class="brightmoon_container_base_recent_block_table_body_row_item"
                 >
@@ -69,7 +68,7 @@
                 <td
                   class="brightmoon_container_base_recent_block_table_body_row_item"
                 >
-                  <button class="btn btn-outline-danger">Delete</button>
+                  <button class="btn btn-outline-danger"(click)="deleteProduct(client)">Delete</button>
                 </td>
               </tr>
             </tbody>
@@ -78,13 +77,13 @@
       </div>
       <div
         class="brightmoon_container_base_analitycs_add m-4"
-        (click)="model.showDialog = true"
+
       >
         <img
           class="brightmoon_container_base_analitycs_add_icon"
           [src]="plus"
         />
-        <p class="brightmoon_container_base_analitycs_add_text">AddClient</p>
+        <p class="brightmoon_container_base_analitycs_add_text" (click)="modal.showClients = true">AddClient</p>
       </div>
     </div>
     <div class="brightmoon_container_base_updates">

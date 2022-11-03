@@ -25,6 +25,9 @@ export class NavbarComponent implements OnInit {
   goToPromotions() {
     this.route.navigate(['/promotions']);
   }
+  goToSettings() {
+    this.route.navigate(['/settings']);
+  }
   ngOnInit(): void {}
   navbartexts: Text[] = NavBarTexts;
 }

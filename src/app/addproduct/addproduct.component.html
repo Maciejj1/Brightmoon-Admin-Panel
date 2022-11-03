@@ -1,10 +1,12 @@
 <div class="modal">
   <div class="modal_container">
     <div class="modal_container_base">
-      <div class="modal_container_base_button">
-        <button class="btn btn-warning" (click)="modal.showDialog = false">
-          CLOSE
-        </button>
+      <div class="modal_container_base_close">
+        <img
+          [src]="close"
+          (click)="modal.showDialog = false"
+          class="modal_container_base_close_image"
+        />
       </div>
       <div class="modal_container_base_title">
         <h3 class="text-muted">ADD PRODUCT</h3>
@@ -13,26 +15,30 @@
         <input
           class="modal_container_base_items_item"
           type="text"
+          [(ngModel)]="ProductName"
           placeholder="ProductName"
         />
         <input
           class="modal_container_base_items_item"
           type="text"
-          placeholder="ProductName"
+          placeholder="ProductNumber"
+          [(ngModel)]="ProductNumber"
         />
         <input
           class="modal_container_base_items_item"
           type="text"
-          placeholder="ProductName"
+          placeholder="ProductStatus"
+          [(ngModel)]="ProductStatus"
         />
         <input
           class="modal_container_base_items_item"
           type="text"
-          placeholder="ProductName"
+          placeholder="ProductPayment"
+          [(ngModel)]="ProductPayment"
         />
       </div>
       <div class="modal_container_base_button">
-        <button class="btn btn-outline-danger">ADD</button>
+        <button class="modal_container_base_button_button" (click)="addProduct()">ADD</button>
       </div>
     </div>
   </div>

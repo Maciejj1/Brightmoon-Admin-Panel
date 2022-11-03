@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 import { Text } from '../Database/text';
 import { NavBarTexts } from '../Database/texts';
 import { Products } from './Products/products';
@@ -18,10 +18,10 @@ export class DashboardComponent implements OnInit {
   plus = 'assets/images/plus-icon.png';
   user = 'assets/images/user-avatar.png';
   customer = 'assets/images/customer-picture.png';
-
   display = false;
   displayModal() {
     this.display = true;
+    console.log('Modal', this.display);
   }
   productsList: Products[] = [];
   productObj: Products = {

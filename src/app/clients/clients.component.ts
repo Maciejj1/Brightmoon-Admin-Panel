@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Client } from './Clients/Client';
 import { ClientsService } from '../shared/clients.service';
 import { ModalService } from '../shared/modal.service';
+import { Products } from '../dashboard/Products/products';
 
 @Component({
   selector: 'app-clients',
@@ -12,10 +13,6 @@ export class ClientsComponent implements OnInit {
   plus = 'assets/images/plus-icon.png';
   ngOnInit(): void {
     this.getAllClients();
-  }
-  display = false;
-  displayModal() {
-    this.display = true;
   }
   clientList: Client[] = [];
   clientObj: Client = {
@@ -31,7 +28,7 @@ export class ClientsComponent implements OnInit {
   email: string = '';
   tel: string = '';
 
-  constructor(private clients: ClientsService, public model: ModalService) {}
+  constructor(private clients: ClientsService, public modal: ModalService) {}
   getAllClients() {
     this.clients.getAllClients().subscribe((res) => {
       this.clientList = res.map((e: any) => {
@@ -59,5 +56,13 @@ export class ClientsComponent implements OnInit {
     this.clientObj.surname = this.surname;
     this.clientObj.email = this.email;
     this.clientObj.tel = this.tel;
+  }
+  deleteProduct(client: Client) {
+    if (
+      window.confirm(
+        'Are you sure to delete?' + client.name + '' + client.surname
+      )
+    )
+      this.clients.removeClient(client);
   }
 }

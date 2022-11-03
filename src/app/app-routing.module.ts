@@ -8,6 +8,7 @@ import { VerifyEmailComponent } from './verify-email/verify-email.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { PromotionsComponent } from './promotions/promotions.component';
 import { ClientsComponent } from './clients/clients.component';
+import { SettingsComponent } from './settings/settings.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   { path: 'promotions', component: PromotionsComponent },
   { path: 'clients', component: ClientsComponent },
+  { path: 'settings', component: SettingsComponent },
   { path: '**', component: PagenotfoundComponent },
 ];
 

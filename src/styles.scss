@@ -14,6 +14,83 @@ html {
   min-height: 100%;
   outline: none;
 }
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  &_container {
+    position: absolute;
+    width: 100%;
+    min-width: 495px;
+    max-width: 495px;
+    height: 679px;
+    background: #212429;
+    &_base {
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+      height: 80%;
+
+      &_close {
+        width: 100%;
+        align-items: end;
+        display: flex;
+        justify-content: end;
+        &_image {
+          width: 30px;
+          margin-top: 35px;
+          cursor: pointer;
+        }
+      }
+      &_title {
+      }
+      &_items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        &_item {
+          background: transparent;
+          min-width: 319px;
+          max-width: 319px;
+          width: 100%;
+          margin-top: 70px;
+          outline: none;
+          border: none;
+          border-bottom: 2px solid #ffffff;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 33px;
+          color: #999999;
+        }
+      }
+      &_button {
+        margin-top: 20px;
+        &_button {
+          width: 100%;
+          min-width: 323px;
+          justify-content: center;
+          align-items: center;
+          max-width: 323px;
+          height: 59px;
+          color: #ffffff;
+          border: none;
+          background: #19191f;
+          border-radius: 7px;
+        }
+      }
+    }
+  }
+}
+
 //Desktop LedBar off to mobile devices
 @media screen and (max-width: 1023px) {
   .desktop-ledbar {
@@ -839,42 +916,6 @@ html {
             margin-left: 20px;
           }
         }
-      }
-    }
-  }
-}
-.modal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.5);
-  &_container {
-    position: absolute;
-    width: 495px;
-    height: 679px;
-    left: 698px;
-    top: 210px;
-    background: #212429;
-    &_base {
-      &_close {
-      }
-      &_title {
-      }
-      &_items {
-        &_item {
-          border: none;
-          color: #999999;
-          font-size: 15px;
-
-          border-bottom: 2px solid #ffffff;
-        }
-      }
-      &_button {
       }
     }
   }

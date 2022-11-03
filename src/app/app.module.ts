@@ -32,6 +32,7 @@ import { AddproductComponent } from './addproduct/addproduct.component';
 import { ClientsComponent } from './clients/clients.component';
 import { PromotionsComponent } from './promotions/promotions.component';
 import { AddclientComponent } from './addclient/addclient.component';
+import { SettingsComponent } from './settings/settings.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { AddclientComponent } from './addclient/addclient.component';
     ClientsComponent,
     PromotionsComponent,
     AddclientComponent,
+    SettingsComponent,
   ],
   imports: [
     BrowserModule,
