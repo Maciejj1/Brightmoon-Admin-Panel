@@ -33,7 +33,7 @@ import { ClientsComponent } from './clients/clients.component';
 import { PromotionsComponent } from './promotions/promotions.component';
 import { AddclientComponent } from './addclient/addclient.component';
 import { SettingsComponent } from './settings/settings.component';
-
+import { HighchartsChartModule } from 'highcharts-angular';
 @NgModule({
   declarations: [
     AppComponent,
@@ -58,6 +58,7 @@ import { SettingsComponent } from './settings/settings.component';
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase),
     AppRoutingModule,
+    HighchartsChartModule,
     MatSidenavModule,
     MatButtonModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),

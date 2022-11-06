@@ -14,6 +14,20 @@ html {
   min-height: 100%;
   outline: none;
 }
+.brightmoon_button{
+  width: 100%;
+  min-width: 323px;
+  justify-content: center;
+  align-items: center;
+  max-width: 323px;
+  margin-top: 20px;
+  height: 59px;
+  color: #ffffff;
+  border: none;
+  background: #212429;
+  border-radius: 7px;
+}
+
 .modal {
   display: flex;
   justify-content: center;

@@ -2,12 +2,16 @@ import { Injectable } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
 import { Router } from '@angular/router';
 import { signOut } from '@angular/fire/auth';
+import { Observable, of } from 'rxjs';
+import { delay, tap } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root',
 })
 export class AuthService {
   constructor(private fireauth: AngularFireAuth, private router: Router) {}
+  redirectUrl: string;
+  isLoggedIn = false;
   //login method
   login(email: string, password: string) {
     this.fireauth.signInWithEmailAndPassword(email, password).then(
@@ -24,6 +28,10 @@ export class AuthService {
         alert('Coś poszło nie tak');
         this.router.navigate(['login']);
       }
+    );
+    return of(true).pipe(
+      delay(1000),
+      tap((val) => (this.isLoggedIn = true))
     );
   }
   // register method
@@ -51,6 +59,7 @@ export class AuthService {
         alert('Coś poszło nie tak');
       }
     );
+    this.isLoggedIn = false;
   }
   //forgot password
   forgotPassword(email: string) {

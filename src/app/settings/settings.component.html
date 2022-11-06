@@ -1,26 +1,27 @@
 <app-ledbar class="desktop-ledbar"></app-ledbar>
 
 <div class="brightmoon">
-  <div class="brightmoon_container" >
+  <app-mobilenav></app-mobilenav>
+  <div class="brightmoon_container">
     <app-navbar class="brightmoon_nav"></app-navbar>
-    <app-mobilenav></app-mobilenav>
-    <div class="brightmoon_container_base">
-
-      <div class="brightmoon_container_base_title">
-        <h1 class="brightmoon_container_base_title_text">
-SETTINGS
-        </h1>
+    <div class="settings-base">
+      <div class="brightmoon_container_base_title settings-title">
+        <h1 class="brightmoon_container_base_title_text">SETTINGS</h1>
       </div>
-      <div class="brightmoon_container_base_salesinfo">
-
-      </div>
-      <div class="brightmoon_container_base_recent">
-        <div class="brightmoon_container_base_recent_title">
-          <p class="brightmoon_container_base_recent_title_text">
-            Recent Products
-          </p>
-        </div>
-        <div class="brightmoon_container_base_recent_block">
+      <div class="settings-container">
+        <div class="settings-container-content">
+          <button class="brightmoon_button">
+            Zmień Email
+          </button>
+          <button class="brightmoon_button">
+            Zmień Hasło
+          </button>
+          <button class="brightmoon_button">
+            Zmień Zdjęcie
+          </button>
+          <button class="brightmoon_button" (click)="logout()">
+            Wyloguj się
+          </button>
         </div>
       </div>
     </div>
