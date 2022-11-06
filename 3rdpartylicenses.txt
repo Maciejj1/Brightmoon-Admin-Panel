@@ -186,6 +186,9 @@ firebase/messaging
 
 firebase/remote-config
 
+highcharts-angular
+SEE LICENSE IN <LICENSE>
+
 idb
 ISC
 ISC License (ISC)
